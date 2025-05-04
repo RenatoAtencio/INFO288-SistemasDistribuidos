@@ -1,0 +1,11 @@
+{
+    "tipo_doc":"revistas",
+    "datos":[
+        {"titulo":"revista1"},
+        {"titulo":"revista2"},
+        {"titulo":"revista3"},
+        {"titulo":"revista4"},
+        {"titulo":"revista5"},
+        {"titulo":"revista6"}
+    ]
+}
