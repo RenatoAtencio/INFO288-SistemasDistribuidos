@@ -1,30 +1,74 @@
-import Pyro5.api
+from fastapi import FastAPI, HTTPException
+import os
+import uvicorn
+from dotenv import load_dotenv
 
-@Pyro5.api.expose
-class ServicioChat:
-    def __init__(self):
-        self.clientes = []
+app = FastAPI(title="Nodo Maestro")
+distribucion = []
 
-    def alta(self, cliente_uri, apodo):
-        print("Cliente conectado:", cliente_uri)
-        cliente_proxy = Pyro5.api.Proxy(cliente_uri)  # Crear un proxy para el cliente
-        self.clientes.append(cliente_proxy)
-        print(f"CLIENTES: {len(self.clientes)} conectados")
-        
-    def baja(self, cliente_uri, apodo):
-        self.clientes = [c for c in self.clientes if c._pyroUri != cliente_uri]
-        print(f"Cliente desconectado: {apodo} | {len(self.clientes)} clientes restantes")
 
-    def envio(self, esc_uri, apodo, mensaje):
-        try:
-            print(f"Procesando búsqueda de {apodo}: {mensaje}")
-            with Pyro5.api.Proxy(esc_uri) as cliente_proxy:
-                cliente_proxy._pyroTimeout = 8
+@app.get("/status")
+def read_root():
+    return {"message": "Nodo Maestro funcionando"}
 
-                respuesta = "resultados"  # Aquí podrías integrar una búsqueda real
 
-                cliente_proxy.notificacion("Servidor",f"Resultado para '{mensaje}': {respuesta}")
-        except Pyro5.errors.TimeoutError:
-            print(f"Tiempo de espera agotado para {esc_uri}")
-        except Exception as e:
-            print(f"Error respondiendo a {esc_uri}: {e}")
+@app.get("/conections")
+def read_root():
+    return distribucion
+
+
+@app.get("/query")
+def busqueda(type: str, busqueda: str):
+
+    if type == "tipo_doc":
+        for nodo in distribucion:
+            if nodo["db_tipo_doc"] == type:
+                # Buscar en el nodo especifico
+                return {"response": "búsqueda por tipo_doc"}
+
+    elif type == "titulo":
+        for nodo in distribucion:
+            # Duscar en todos los nodos
+            print(f"búsqueda título: {busqueda}")
+
+    return {"type": type, "busqueda": busqueda}
+
+
+@app.post("/entry")
+def ingresoEsclavo(puerto: int, db: str):
+
+    for nodo in distribucion:
+        if nodo["puerto"] == puerto:
+            return {"response": "puerto tomado"}
+
+    distribucion.append({
+        "puerto": puerto,
+        "db_tipo_doc": db,
+    })
+
+    return{
+        "response": "conexion exitosa"
+    }
+
+
+@app.delete("/exit")
+def salidaEsclavo(puerto: int):
+    
+    for nodo in distribucion:
+        if nodo["puerto"] == puerto:
+            distribucion.remove(nodo)
+            break
+
+    return{
+        "response": "desconexion exitosa"
+    }
+
+
+if __name__ == "__main__":
+
+    load_dotenv(".env")
+
+    puerto = int(os.getenv("HOSTPORT"))
+    url = os.getenv("URL")
+
+    uvicorn.run("maestro:app", host='localhost', port=puerto, reload=True)
