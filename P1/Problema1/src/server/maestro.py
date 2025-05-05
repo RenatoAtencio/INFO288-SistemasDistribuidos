@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 app = FastAPI(title="Nodo Maestro")
 distribucion = []
 
-
 @app.get("/status")
 def read_root():
     return {"message": "Nodo Maestro funcionando"}
@@ -62,7 +61,6 @@ def salidaEsclavo(puerto: int):
     return{
         "response": "desconexion exitosa"
     }
-
 
 if __name__ == "__main__":
 
