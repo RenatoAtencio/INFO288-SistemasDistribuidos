@@ -4,15 +4,16 @@ from dotenv import load_dotenv
 
 API_BASE_URL = "http://localhost:5000"
 
-async def realizarBusqueda(edad: int, type: str, busqueda: str):
+async def realizarBusqueda(edad: int, tipo_busqueda: int, busqueda: str):
     async with httpx.AsyncClient() as client:
         try:
             response = await client.get(
                 f"{API_BASE_URL}/query",
                 params={
+                    "edad": edad,
                     "busqueda": busqueda, 
-                    "type": type,
-                    "edad": edad}
+                    "tipo_busqueda": tipo_busqueda
+                }
             )
             print("Respuesta del maestro:", response.json())
         except Exception as e:
@@ -69,7 +70,7 @@ if __name__ == "__main__":
             
         busqueda = mostrarInputBusqueda(tipoDeBusqueda)
 
-        asyncio.run(realizarBusqueda(tipoDeBusqueda, busqueda))
+        asyncio.run(realizarBusqueda(edad, tipoDeBusqueda, busqueda))
 
         opcionSeguir = input("Seguir? (s/n): ")
 
