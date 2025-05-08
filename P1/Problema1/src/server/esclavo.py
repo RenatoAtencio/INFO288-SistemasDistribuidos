@@ -7,14 +7,13 @@ from dotenv import load_dotenv
 import os
 import json
 from typing import List
+import re
 
 load_dotenv(".env")
 
 puerto = int(os.getenv("SLAVEPORT"))
 arr_databases = (os.getenv("SLAVEDB")).split(",")
 API_BASE_URL = os.getenv("API_BASE_URL")
-
-print(arr_databases)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -73,13 +72,18 @@ def busqueda(busqueda: str, tipo_busqueda: int):
 
             for elem in datos_database["datos"]:
 
-                palabras_titulo = set(str(elem["titulo"]).split())
-                palabras_busqueda = set(busqueda.split())
+
+                
+
+                palabras_titulo = set( re.sub('[^A-Za-z0-9\s]+', '', str(elem["titulo"]).lower()).split() )
+                palabras_busqueda = set( re.sub('[^A-Za-z0-9\s]+', '', busqueda.lower()).split() )
+
+                print([palabras_titulo, palabras_busqueda])
 
                 coincidencias = palabras_titulo & palabras_busqueda
-                conteo = len(coincidencias)
+                conteo = len(coincidencias) + 1
 
-                if conteo > 0:
+                if conteo > 1:
 
                     print(f"Se encontro coincidencia para {busqueda}")
                     arr_coincidencias.append({
@@ -109,11 +113,11 @@ def busqueda(busqueda: str, tipo_busqueda: int):
                 arr_coincidencias = []
 
                 for elem in datos_database["datos"]:
-                    palabras_titulo = set(str(elem["titulo"]).split())
-                    palabras_busqueda = set(busqueda.split())
+                    palabras_titulo = set( re.sub('[^A-Za-z0-9\s]+', '', str(elem["titulo"]).lower()).split() )
+                    palabras_busqueda = set( re.sub('[^A-Za-z0-9\s]+', '', busqueda.lower()).split() )
 
                     coincidencias = palabras_titulo & palabras_busqueda
-                    conteo = len(coincidencias)
+                    conteo = len(coincidencias) + 1
 
                     arr_coincidencias.append({
                         "titulo" : elem["titulo"],
@@ -126,6 +130,7 @@ def busqueda(busqueda: str, tipo_busqueda: int):
                 })
 
                 return(rsp)
+        
     else:
         return "None"
 

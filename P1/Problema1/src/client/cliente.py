@@ -15,9 +15,14 @@ async def realizarBusqueda(edad: int, tipo_busqueda: int, busqueda: str):
                     "tipo_busqueda": tipo_busqueda
                 }
             )
-            print("Respuesta del maestro:", response.json())
+            return imprimirResultados(response.json())
         except Exception as e:
             print("Error al realizar la búsqueda:", e)
+
+
+def imprimirResultados(resultados):
+    for i, elem in enumerate(resultados):
+        print(f"{i}) Titulo: {elem["titulo"]}, value: {elem["value"]}")
 
 
 def mostrarOpciones(opciones):
@@ -32,7 +37,7 @@ def mostrarInputBusqueda(opcion):
         busqueda = input("Ingrese su busqueda: ")
     elif opcion == 2:
         print(opcion)
-        print("Ingrese sus opciones de tipo de documento, separado por una ','")
+        print("Ingrese sus opciones de tipo de documento, separado por una ',' o '_' si es una palabra compuesta")
         busqueda = input("> ")
     else:
         print("Opcion fuera de rango")

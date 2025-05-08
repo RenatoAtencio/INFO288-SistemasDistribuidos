@@ -1,0 +1,23 @@
+{
+    "tipo_doc": "tecnologia",
+    "datos": [
+        {
+            "titulo": "Revolución 5.0: integración de humanos y máquinas en la industria"
+        },
+        {
+            "titulo": "Blockchain más allá de las criptomonedas: casos prácticos"
+        },
+        {
+            "titulo": "Computación cuántica: el futuro de la velocidad de procesamiento"
+        },
+        {
+            "titulo": "Ética en el desarrollo de inteligencia artificial autónoma"
+        },
+        {
+            "titulo": "Internet de las cosas y su impacto en las ciudades inteligentes"
+        },
+        {
+            "titulo": "Avances en neurotecnología y control cerebral por interfaces digitales"
+        }
+    ]
+}

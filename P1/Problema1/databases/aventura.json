@@ -1,0 +1,23 @@
+{
+    "tipo_doc": "aventura",
+    "datos": [
+        {
+            "titulo": "Expedición al corazón del Amazonas en busca de civilizaciones perdidas"
+        },
+        {
+            "titulo": "La travesía de un navegante solitario a través del océano Pacífico"
+        },
+        {
+            "titulo": "Persecución en los Alpes tras un mapa de tesoros antiguos"
+        },
+        {
+            "titulo": "El secreto del templo sumergido bajo las aguas del Mediterráneo"
+        },
+        {
+            "titulo": "Aventura en el desierto del Sahara tras las huellas de un arqueólogo"
+        },
+        {
+            "titulo": "El ascenso al Everest en condiciones extremas y la lucha por la supervivencia"
+        }
+    ]
+}
