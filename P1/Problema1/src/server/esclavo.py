@@ -1,49 +1,59 @@
 from fastapi import FastAPI, HTTPException
-from uuid import uuid4
-import uvicorn
-import httpx
 from contextlib import asynccontextmanager
 from dotenv import load_dotenv
+import uvicorn
 import os
 import json
-from typing import List
 import re
+import httpx
 
 load_dotenv(".env")
 
-puerto = int(os.getenv("SLAVEPORT"))
-arr_databases = (os.getenv("SLAVEDB")).split(",")
-API_BASE_URL = os.getenv("API_BASE_URL")
+SLAVEPORT = int(os.getenv("SLAVEPORT"))
+SLAVEDB = (os.getenv("SLAVEDB")).split(",")
+HOST = os.getenv("HOST") 
+PROTOCOLO = os.getenv("PROTOCOLO")
+HOSTPORT = int(os.getenv("HOSTPORT"))
+HOSTENTRYPOINT = os.getenv("HOSTENTRYPOINT")
+HOSTEXITPOINT = os.getenv("HOSTEXITPOINT")
+RELOAD=bool(int(os.getenv("RELOAD")))
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     async with httpx.AsyncClient() as client:
+        entry_url = f"{PROTOCOLO}://{HOST}:{HOSTPORT}/{HOSTENTRYPOINT}"
         try:
             response = await client.post(
-                f"{API_BASE_URL}/entry",
+                entry_url,
                 params={
-                    "puerto": puerto, 
-                    "databases": arr_databases
+                    "puerto": SLAVEPORT, 
+                    "databases": SLAVEDB
                 }
             )
 
-            print("Respuesta del maestro:", response.json())
+            r = response.json()
+            print("Respuesta del maestro:", r)
+
+            if r["status"] != "success":
+                raise SystemExit(f"[ERROR] {r['msg']}")  # <--- esto detendrá todo
+
         except Exception as e:
             print("Error al conectar con el maestro:", e)
+            raise SystemExit("[ERROR] No se pudo registrar con el maestro")
 
     yield  
 
     # Esto se ejecuta cuando se termina la ejecucion
     async with httpx.AsyncClient() as client:
+            exit_url = f"{PROTOCOLO}://{HOST}:{HOSTPORT}/{HOSTEXITPOINT}"
             try:
                 response = await client.delete(
-                    f"{API_BASE_URL}/exit",
-                    params={"puerto": puerto}
+                    exit_url,
+                    params={"puerto": SLAVEPORT}
                 )
                 print("Respuesta del maestro (exit):", response.json())
             except Exception as e:
                 print("Error al notificar cierre al maestro:", e)
-
 
 app = FastAPI(title="Nodo esclavo", lifespan=lifespan)
 
@@ -61,61 +71,42 @@ def recuperarDatabase(nombre_db):
 
 @app.get("/query")
 def busqueda(busqueda: str, tipo_busqueda: int):
-
     if tipo_busqueda == 1:  # Por titulo
-
         rsp = []
-
-        for database in arr_databases:
+        for database in SLAVEDB:
             datos_database = recuperarDatabase(database)
             arr_coincidencias = []
 
             for elem in datos_database["datos"]:
-
-
-                
-
-                palabras_titulo = set( re.sub('[^A-Za-z0-9\s]+', '', str(elem["titulo"]).lower()).split() )
-                palabras_busqueda = set( re.sub('[^A-Za-z0-9\s]+', '', busqueda.lower()).split() )
-
-                print([palabras_titulo, palabras_busqueda])
+                palabras_titulo = set( re.sub(r'[^A-Za-z0-9\s]+', '', str(elem["titulo"]).lower()).split() )
+                palabras_busqueda = set( re.sub(r'[^A-Za-z0-9\s]+', '', busqueda.lower()).split() )
 
                 coincidencias = palabras_titulo & palabras_busqueda
                 conteo = len(coincidencias) + 1
 
                 if conteo > 1:
-
                     print(f"Se encontro coincidencia para {busqueda}")
                     arr_coincidencias.append({
                         "titulo" : elem["titulo"],
                         "value": conteo
                     })
 
-
             if len(arr_coincidencias) > 0:
                 rsp.append({
                     "database": database,
                     "coincidencias": arr_coincidencias 
                 })
-
         return(rsp)
-
-
-
     elif tipo_busqueda == 2: # Por tipo de documento
-        
         rsp = []
-
-        for database in arr_databases:
-
+        for database in SLAVEDB:
             if database == busqueda:
                 datos_database = recuperarDatabase(database)
                 arr_coincidencias = []
 
                 for elem in datos_database["datos"]:
-                    palabras_titulo = set( re.sub('[^A-Za-z0-9\s]+', '', str(elem["titulo"]).lower()).split() )
-                    palabras_busqueda = set( re.sub('[^A-Za-z0-9\s]+', '', busqueda.lower()).split() )
-
+                    palabras_titulo = set( re.sub(r'[^A-Za-z0-9\s]+', '', str(elem["titulo"]).lower()).split() )
+                    palabras_busqueda = set( re.sub(r'[^A-Za-z0-9\s]+', '', busqueda.lower()).split() )
                     coincidencias = palabras_titulo & palabras_busqueda
                     conteo = len(coincidencias) + 1
 
@@ -130,9 +121,11 @@ def busqueda(busqueda: str, tipo_busqueda: int):
                 })
 
                 return(rsp)
-        
     else:
-        return "None"
+        return {"error" : "Tipo de busqueda no definido"}
 
 if __name__ == "__main__":
-    uvicorn.run("esclavo:app", host="localhost", port=puerto, reload=True)
+    try:
+        uvicorn.run("esclavo:app", host=HOST, port=SLAVEPORT, reload=RELOAD)
+    except SystemExit as e:
+        print(e)

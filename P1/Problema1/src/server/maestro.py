@@ -9,6 +9,14 @@ from typing import List, Annotated
 app = FastAPI(title="Nodo Maestro")
 distribucion = []
 
+load_dotenv(".env")
+
+PROTOCOLO = os.getenv("PROTOCOLO")
+HOST = os.getenv("HOST") 
+HOSTPORT = int(os.getenv("HOSTPORT"))
+HOSTSLAVEENDPOINT = os.getenv("HOSTSLAVEENDPOINT") 
+RELOAD=bool(int(os.getenv("RELOAD")))
+
 @app.get("/status")
 def read_root():
     """
@@ -29,10 +37,12 @@ async def realizarBusqueda(port: int, busqueda: str, tipo_busqueda: int):
     """
         Realiza la llamada al esclavo
     """
+    url = f"{PROTOCOLO}://{HOST}:{port}/{HOSTSLAVEENDPOINT}"
+
     async with httpx.AsyncClient() as client:
         try:
             response = await client.get(
-                f"http://localhost:{port}/query",
+                url,
                 params={
                     "tipo_busqueda": tipo_busqueda,
                     "busqueda": busqueda
@@ -133,16 +143,20 @@ def ingresoEsclavo(puerto: int, databases: Annotated[List[str] | None, Query()])
 
     for nodo in distribucion:
         if nodo["puerto"] == puerto:
-            return {"response": "puerto tomado"}
-
-    print(databases)
+            return {
+                "status": "error",
+                "msg": "Puerto ocupado"
+            }
 
     distribucion.append({
         "puerto": puerto,
         "databases": databases,
     })
 
-    return{"Respuesta": "conexion exitosa"}
+    return{
+        "status": "success",
+        "msg": "Conectado al maestro"
+    }
 
 
 @app.delete("/exit")
@@ -161,8 +175,8 @@ def salidaEsclavo(puerto: int):
 
 if __name__ == "__main__":
 
-    load_dotenv(".env")
+    
     puerto = int(os.getenv("HOSTPORT"))
     url = os.getenv("URL")
 
-    uvicorn.run("maestro:app", host='localhost', port=puerto, reload=True)
+    uvicorn.run("maestro:app", host=HOST, port=puerto, reload=RELOAD)

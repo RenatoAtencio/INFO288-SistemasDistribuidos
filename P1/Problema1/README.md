@@ -14,3 +14,26 @@ Dependencias
     python-dotenv
     pydantic
     uuid
+
+client/.env
+    PROTOCOLO=http
+    HOST=localhost
+    HOSTPORT=5000
+
+    CLIENTHOSTENDPOINT=query
+
+server/.env
+    PROTOCOLO=http
+    HOST=localhost
+    HOSTPORT=5000
+
+    SLAVEPORT=8001
+    SLAVEDB=autoayuda,biografia
+
+    RELOAD=0 
+
+    CLIENTHOSTENDPOINT=query
+    HOSTSLAVEENDPOINT=query
+
+    HOSTENTRYPOINT=entry
+    HOSTEXITPOINT=exit

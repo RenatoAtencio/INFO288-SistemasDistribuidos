@@ -1,14 +1,22 @@
 import httpx
 import asyncio
 from dotenv import load_dotenv
+import os
 
-API_BASE_URL = "http://localhost:5000"
+load_dotenv(".env")
+
+PROTOCOLO = os.getenv("PROTOCOLO")
+HOST = os.getenv("HOST") 
+HOSTPORT = int(os.getenv("HOSTPORT"))
+CLIENTHOSTENDPOINT = os.getenv("CLIENTHOSTENDPOINT") 
+
+URL = f"{PROTOCOLO}://{HOST}:{HOSTPORT}/{CLIENTHOSTENDPOINT}"
 
 async def realizarBusqueda(edad: int, tipo_busqueda: int, busqueda: str):
     async with httpx.AsyncClient() as client:
         try:
             response = await client.get(
-                f"{API_BASE_URL}/query",
+                URL,
                 params={
                     "edad": edad,
                     "busqueda": busqueda, 
