@@ -1,0 +1,7 @@
+Los logs pueden tener el formato de un csv por dentro pero debe ser un archivo .log
+
+Los clientes RMI envían línea por línea el log generado por los esclavos al servidor RMI. Los clientes RMI deben recordar en que línea quedaron para que la próxima vez que se levante, siga mandando las líneas desde esa línea y no envíe todo de nuevo.
+
+
+timpo,maquina,tipo_consulta,consulta,tiempo_fin,ranking,
+10:00,escalvo,titulo,harry potter,10:01,5
