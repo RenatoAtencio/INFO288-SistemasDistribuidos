@@ -45,12 +45,16 @@ def enviar_logs(ruta_log):
         print(f"Error al enviar logs: {e}")
 
 if __name__ == "__main__":
-    ruta = ""
     while True:
         ruta = input("\nIngrese la ruta del log que desea enviar al servidor: ")
         if os.path.isfile(ruta):
             break
         else:
             print("La ruta ingresada no existe. Intente nuevamente")
-    enviar_logs(ruta)
-    print("Cerrando cliente ...\n")
+    
+    while True:
+        enviar_logs(ruta)
+        continuar = input("\n¿Desea volver a enviar el log? (s/n): ").strip().lower()
+        if continuar != "s":
+            print("Cerrando cliente ...\n")
+            break
