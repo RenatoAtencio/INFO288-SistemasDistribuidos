@@ -30,7 +30,7 @@ async def realizarBusqueda(edad: int, tipo_busqueda: int, busqueda: str):
 
 def imprimirResultados(resultados):
     for i, elem in enumerate(resultados):
-        print(f"{i}) Titulo: {elem["titulo"]}, value: {elem["value"]}")
+        print(f"{i}) Titulo: {elem["titulo"]}, Ranking: {elem["ranking"]}")
 
 
 def mostrarOpciones(opciones):
@@ -57,12 +57,14 @@ def mostrarInputBusqueda(opcion):
 if __name__ == "__main__":
     seguir = True 
     opciones = ["Titulo", "Tipo de documento"]
+    edad = -1
     
     while seguir:
 
         while True:
             try:
-                edad = int(input("Ingrese su edad: "))
+                while (0 > edad):
+                    edad = int(input("Ingrese su edad (mayor a 0): "))
                 break
             except Exception as e:
                 print(f"Error: {e}")

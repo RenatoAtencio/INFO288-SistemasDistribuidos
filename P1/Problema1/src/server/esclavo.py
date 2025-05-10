@@ -69,60 +69,101 @@ def recuperarDatabase(nombre_db):
     f.close()
     return contenido
 
+def obtenerSet(sentencia: str):
+    stopwords = {
+        'el', 'la', 'los', 'las', 'un', 'una', 
+        'y', 'o', 'de', 'que', 'en', 'a', 'por', 
+        'con', 'para', 'es', 'al'}
+    palabras = re.sub(r'[^A-Za-z0-9\s]+', '', sentencia.lower()).split()
+    sentenciaSet = set(palabra for palabra in palabras if palabra not in stopwords)
+    return sentenciaSet
+
+def compararABusqueda(busqueda, titulo):
+    set1 = obtenerSet(busqueda)
+    set2 = obtenerSet(titulo)
+
+    interseccion = set1 & set2
+    coincidencias = len(interseccion)
+    coincidencias_norm = coincidencias/len(set2)
+    return [coincidencias, coincidencias_norm]
+
 @app.get("/query")
-def busqueda(busqueda: str, tipo_busqueda: int):
-    if tipo_busqueda == 1:  # Por titulo
-        rsp = []
+def busqueda(busqueda: str, tipo_busqueda: int, edad: int):
+    preferencias = {
+        # col =            0-14, 15-29, 30-54, >55
+        "ciencia_ficcion":  [8.5, 9.0, 7.5, 3.0],
+        "aventura":         [9.0, 8.5, 6.7, 5.0],
+        "romance":          [6.0, 8.5, 7.5, 5.5],
+        "historia":         [3.0, 4.5, 6.7, 9.0],
+        "biografia":        [2.0, 3.3, 6.5, 9.5],
+        "misterio":         [6.5, 9.5, 8.0, 6.0],
+        "fantasia":         [9.5, 9.8, 6.5, 4.0],
+        "autoayuda":        [1.4, 6.9, 8.5, 5.3],
+        "poesia":           [3.5, 5.0, 6.0, 7.5],
+        "tecnologia":       [6.3, 9.5, 8.0, 5.0],
+    }   
+    rsp = []
+
+    if 0 <= edad <= 14:
+        index = 0
+    elif 15 <= edad <= 29:
+        index = 1
+    elif 30 <= edad <= 54:
+        index = 2
+    else:
+        index = 3
+
+    peso_titulo = 0.45
+    peso_preferencias = 0.55
+
+    if tipo_busqueda == 1:      # Busqueda por titulo (Implica buscar en todas las databases)
         for database in SLAVEDB:
             datos_database = recuperarDatabase(database)
             arr_coincidencias = []
 
-            for elem in datos_database["datos"]:
-                palabras_titulo = set( re.sub(r'[^A-Za-z0-9\s]+', '', str(elem["titulo"]).lower()).split() )
-                palabras_busqueda = set( re.sub(r'[^A-Za-z0-9\s]+', '', busqueda.lower()).split() )
+            for elem in datos_database["datos"]:    # Recorre los elementos de la db
+                coincidencias, coincidencias_norm = compararABusqueda(busqueda, str(elem["titulo"]))   
+                ranking = peso_titulo * coincidencias_norm + peso_preferencias * preferencias[database][index]
 
-                coincidencias = palabras_titulo & palabras_busqueda
-                conteo = len(coincidencias) + 1
-
-                if conteo > 1:
-                    print(f"Se encontro coincidencia para {busqueda}")
+                if coincidencias >= 1:
                     arr_coincidencias.append({
                         "titulo" : elem["titulo"],
-                        "value": conteo
+                        "ranking": round(ranking, 3),
                     })
 
-            if len(arr_coincidencias) > 0:
+            if len(arr_coincidencias) > 0:          # Evitar agregar un [] si no se encontro ningun titulo similar en la db
                 rsp.append({
                     "database": database,
-                    "coincidencias": arr_coincidencias 
+                    "respuestas": arr_coincidencias 
                 })
-        return(rsp)
-    elif tipo_busqueda == 2: # Por tipo de documento
-        rsp = []
+
+    elif tipo_busqueda == 2:    # Por tipo de documento (Implica devolver todos los elem de la db especifica)
         for database in SLAVEDB:
             if database == busqueda:
                 datos_database = recuperarDatabase(database)
                 arr_coincidencias = []
 
                 for elem in datos_database["datos"]:
-                    palabras_titulo = set( re.sub(r'[^A-Za-z0-9\s]+', '', str(elem["titulo"]).lower()).split() )
-                    palabras_busqueda = set( re.sub(r'[^A-Za-z0-9\s]+', '', busqueda.lower()).split() )
-                    coincidencias = palabras_titulo & palabras_busqueda
-                    conteo = len(coincidencias) + 1
+                    coincidencias, coincidencias_norm = compararABusqueda(busqueda, str(elem["titulo"]))
+                    ranking = ((peso_titulo * coincidencias_norm) + (peso_preferencias * preferencias[database][index])) * float(elem["popularidad"])
 
                     arr_coincidencias.append({
                         "titulo" : elem["titulo"],
-                        "value": conteo
+                        "ranking": round(ranking, 3),
                     })
 
                 rsp.append({
                     "database": database,
-                    "coincidencias": arr_coincidencias 
+                    "respuestas": arr_coincidencias 
                 })
 
-                return(rsp)
+                break
     else:
         return {"error" : "Tipo de busqueda no definido"}
+    
+    print(rsp)
+    return rsp
+    
 
 if __name__ == "__main__":
     try:

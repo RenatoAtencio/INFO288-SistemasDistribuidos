@@ -2,22 +2,44 @@
     "tipo_doc": "tecnologia",
     "datos": [
         {
-            "titulo": "Revolución 5.0: integración de humanos y máquinas en la industria"
+            "titulo": "Revolución 5.0: integración de humanos y máquinas en la industria",
+            "popularidad": 4.5
         },
         {
-            "titulo": "Blockchain más allá de las criptomonedas: casos prácticos"
+            "titulo": "Blockchain más allá de las criptomonedas: casos prácticos",
+            "popularidad": 4.2
         },
         {
-            "titulo": "Computación cuántica: el futuro de la velocidad de procesamiento"
+            "titulo": "Computación cuántica: el futuro de la velocidad de procesamiento",
+            "popularidad": 4.8
         },
         {
-            "titulo": "Ética en el desarrollo de inteligencia artificial autónoma"
+            "titulo": "Ética en el desarrollo de inteligencia artificial autónoma",
+            "popularidad": 4.6
         },
         {
-            "titulo": "Internet de las cosas y su impacto en las ciudades inteligentes"
+            "titulo": "Internet de las cosas y su impacto en las ciudades inteligentes",
+            "popularidad": 4.4
         },
         {
-            "titulo": "Avances en neurotecnología y control cerebral por interfaces digitales"
+            "titulo": "Avances en neurotecnología y control cerebral por interfaces digitales",
+            "popularidad": 4.1
+        },
+        {
+            "titulo": "Ciberseguridad en la era del big data: retos y soluciones",
+            "popularidad": 4.3
+        },
+        {
+            "titulo": "Realidad aumentada y su aplicación en el aprendizaje moderno",
+            "popularidad": 3.9
+        },
+        {
+            "titulo": "La computación en la nube: fundamentos y aplicaciones actuales",
+            "popularidad": 4.0
+        },
+        {
+            "titulo": "Automatización con inteligencia artificial en la agricultura",
+            "popularidad": 3.7
         }
     ]
 }
