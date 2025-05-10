@@ -16,7 +16,7 @@ En el Problema 1, cada nodo esclavo genera su propio log de eventos. En esta eta
     - `NAMESERVER_PORT=9090`
     - `NAMESERVER_OBJECT=logs.centralizados`
     - `MEMORIAS=memorias/memoria`
-    - `LOG_HEADER=timestamp_ini,timestamp_fin,maquina,tipo_maquina,query,tiempo_ejecucion,score,rango_etario`
+    - `LOG_HEADER=operacion,estado,t_ini,t_fin,puerto_maquina,busqueda,tipo_busqueda,cant_resultados,tamano_respuesta_bytes,edad,ranking`
     - `LOG_CENTRALIZADO=../log_centralizado.log`
 
 - Instalar las dependencias:
