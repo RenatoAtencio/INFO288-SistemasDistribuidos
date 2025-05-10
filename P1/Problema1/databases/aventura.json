@@ -2,22 +2,44 @@
     "tipo_doc": "aventura",
     "datos": [
         {
-            "titulo": "Expedición al corazón del Amazonas en busca de civilizaciones perdidas"
+            "titulo": "Expedición al corazón del Amazonas en busca de civilizaciones perdidas",
+            "popularidad": 4.6
         },
         {
-            "titulo": "La travesía de un navegante solitario a través del océano Pacífico"
+            "titulo": "La travesía de un navegante solitario a través del océano Pacífico",
+            "popularidad": 4.2
         },
         {
-            "titulo": "Persecución en los Alpes tras un mapa de tesoros antiguos"
+            "titulo": "Persecución en los Alpes tras un mapa de tesoros antiguos",
+            "popularidad": 4.3
         },
         {
-            "titulo": "El secreto del templo sumergido bajo las aguas del Mediterráneo"
+            "titulo": "El secreto del templo sumergido bajo las aguas del Mediterráneo",
+            "popularidad": 4.5
         },
         {
-            "titulo": "Aventura en el desierto del Sahara tras las huellas de un arqueólogo"
+            "titulo": "Aventura en el desierto del Sahara tras las huellas de un arqueólogo",
+            "popularidad": 4.4
         },
         {
-            "titulo": "El ascenso al Everest en condiciones extremas y la lucha por la supervivencia"
+            "titulo": "El ascenso al Everest en condiciones extremas y la lucha por la supervivencia",
+            "popularidad": 4.8
+        },
+        {
+            "titulo": "Exploradores perdidos en el corazón de la selva africana",
+            "popularidad": 4.1
+        },
+        {
+            "titulo": "Ruta de escape de prisioneros de guerra a través de Siberia",
+            "popularidad": 4.0
+        },
+        {
+            "titulo": "Descenso a las cavernas inexploradas del Himalaya",
+            "popularidad": 4.3
+        },
+        {
+            "titulo": "Carrera contrarreloj en una isla volcánica antes de la erupción",
+            "popularidad": 4.7
         }
     ]
 }

@@ -2,22 +2,44 @@
     "tipo_doc": "fantasia",
     "datos": [
         {
-            "titulo": "Crónicas de un reino perdido entre dragones y hechiceros"
+            "titulo": "Crónicas de un reino perdido entre dragones y hechiceros",
+            "popularidad": 4.7
         },
         {
-            "titulo": "La espada encantada y el guardián del bosque eterno"
+            "titulo": "La espada encantada y el guardián del bosque eterno",
+            "popularidad": 4.5
         },
         {
-            "titulo": "El legado de los elfos oscuros bajo la luna de sangre"
+            "titulo": "El legado de los elfos oscuros bajo la luna de sangre",
+            "popularidad": 4.2
         },
         {
-            "titulo": "Hechizos prohibidos del grimorio de la torre olvidada"
+            "titulo": "Hechizos prohibidos del grimorio de la torre olvidada",
+            "popularidad": 3.9
         },
         {
-            "titulo": "El viaje de la princesa a través del portal de sombras"
+            "titulo": "El viaje de la princesa a través del portal de sombras",
+            "popularidad": 4.4
         },
         {
-            "titulo": "Batallas por el trono de cristal en tierras mágicas"
+            "titulo": "Batallas por el trono de cristal en tierras mágicas",
+            "popularidad": 4.8
+        },
+        {
+            "titulo": "Relatos del mago ciego que dominaba los elementos",
+            "popularidad": 4.1
+        },
+        {
+            "titulo": "Sombras y runas: los secretos de la orden arcana",
+            "popularidad": 3.8
+        },
+        {
+            "titulo": "Los siete reinos del cielo estelar",
+            "popularidad": 4.3
+        },
+        {
+            "titulo": "El despertar de los gigantes de piedra",
+            "popularidad": 3.6
         }
     ]
 }

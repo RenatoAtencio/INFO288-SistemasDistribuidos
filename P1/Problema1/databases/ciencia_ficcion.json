@@ -2,22 +2,44 @@
     "tipo_doc": "ciencia_ficcion",
     "datos": [
         {
-            "titulo": "Exploración interestelar y colonización humana en planetas habitables"
+            "titulo": "Exploración interestelar y colonización humana en planetas habitables",
+            "popularidad": 4.7
         },
         {
-            "titulo": "Impacto de la inteligencia artificial en civilizaciones del futuro"
+            "titulo": "Impacto de la inteligencia artificial en civilizaciones del futuro",
+            "popularidad": 4.8
         },
         {
-            "titulo": "Narrativas de viajes temporales y sus paradojas filosóficas"
+            "titulo": "Narrativas de viajes temporales y sus paradojas filosóficas",
+            "popularidad": 4.5
         },
         {
-            "titulo": "El ascenso de máquinas conscientes en un mundo posthumano"
+            "titulo": "El ascenso de máquinas conscientes en un mundo posthumano",
+            "popularidad": 4.3
         },
         {
-            "titulo": "Biotecnología alienígena y su influencia en la evolución humana"
+            "titulo": "Biotecnología alienígena y su influencia en la evolución humana",
+            "popularidad": 4.0
         },
         {
-            "titulo": "Sociedades utópicas bajo regímenes tecnocráticos en el siglo XXIV"
+            "titulo": "Sociedades utópicas bajo regímenes tecnocráticos en el siglo XXIV",
+            "popularidad": 3.9
+        },
+        {
+            "titulo": "Terraformación y ética: dilemas en nuevos mundos",
+            "popularidad": 4.2
+        },
+        {
+            "titulo": "Consciencia digital: humanos en redes neuronales cuánticas",
+            "popularidad": 4.6
+        },
+        {
+            "titulo": "El experimento Omega: humanos modificados genéticamente",
+            "popularidad": 4.1
+        },
+        {
+            "titulo": "Arquitecturas espaciales en órbita: ciudades entre galaxias",
+            "popularidad": 3.8
         }
     ]
 }

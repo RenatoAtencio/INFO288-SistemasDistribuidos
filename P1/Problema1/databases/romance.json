@@ -2,22 +2,44 @@
     "tipo_doc": "romance",
     "datos": [
         {
-            "titulo": "Entre cartas y miradas: un amor en tiempos de guerra"
+            "titulo": "Entre cartas y miradas: un amor en tiempos de guerra",
+            "popularidad": 4.7
         },
         {
-            "titulo": "Susurros del alma bajo la lluvia de París"
+            "titulo": "Susurros del alma bajo la lluvia de París",
+            "popularidad": 4.6
         },
         {
-            "titulo": "Historias de reencuentros imposibles en trenes de medianoche"
+            "titulo": "Historias de reencuentros imposibles en trenes de medianoche",
+            "popularidad": 4.3
         },
         {
-            "titulo": "La librería del viejo barrio donde nació el amor eterno"
+            "titulo": "La librería del viejo barrio donde nació el amor eterno",
+            "popularidad": 4.5
         },
         {
-            "titulo": "Dos almas extraviadas que se encontraron en la Toscana"
+            "titulo": "Dos almas extraviadas que se encontraron en la Toscana",
+            "popularidad": 4.4
         },
         {
-            "titulo": "Un amor prohibido entre las luces de Nueva York"
+            "titulo": "Un amor prohibido entre las luces de Nueva York",
+            "popularidad": 4.8
+        },
+        {
+            "titulo": "Cartas desde el pasado: secretos entre líneas de amor",
+            "popularidad": 4.2
+        },
+        {
+            "titulo": "Besos robados en la estación de invierno",
+            "popularidad": 4.0
+        },
+        {
+            "titulo": "Melodías de amor bajo el cielo de Andalucía",
+            "popularidad": 4.1
+        },
+        {
+            "titulo": "El café donde el tiempo se detuvo por amor",
+            "popularidad": 4.3
         }
     ]
 }

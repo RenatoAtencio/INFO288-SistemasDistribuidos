@@ -2,22 +2,28 @@
     "tipo_doc": "autoayuda",
     "datos": [
         {
-            "titulo": "Redescubre tu propósito: guía para una vida plena y consciente"
+            "titulo": "Redescubre tu propósito: guía para una vida plena y consciente",
+            "popularidad": 4.5
         },
         {
-            "titulo": "Rompe tus límites: estrategias para desbloquear tu potencial"
+            "titulo": "Rompe tus límites: estrategias para desbloquear tu potencial",
+            "popularidad": 4.3
         },
         {
-            "titulo": "El arte de dejar ir y avanzar con resiliencia"
+            "titulo": "El arte de dejar ir y avanzar con resiliencia",
+            "popularidad": 4.6
         },
         {
-            "titulo": "Mente clara, corazón abierto: claves para el bienestar emocional"
+            "titulo": "Mente clara, corazón abierto: claves para el bienestar emocional",
+            "popularidad": 4.2
         },
         {
-            "titulo": "Rutinas poderosas para transformar tu día a día"
+            "titulo": "Rutinas poderosas para transformar tu día a día",
+            "popularidad": 4.0
         },
         {
-            "titulo": "Pequeños hábitos, grandes cambios: un camino hacia el éxito personal"
+            "titulo": "Pequeños hábitos, grandes cambios: un camino hacia el éxito personal",
+            "popularidad": 4.4
         }
     ]
 }

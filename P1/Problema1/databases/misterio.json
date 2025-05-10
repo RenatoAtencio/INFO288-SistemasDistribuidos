@@ -2,22 +2,44 @@
     "tipo_doc": "misterio",
     "datos": [
         {
-            "titulo": "El enigma del manuscrito encontrado en la biblioteca olvidada"
+            "titulo": "El enigma del manuscrito encontrado en la biblioteca olvidada",
+            "popularidad": 4.6
         },
         {
-            "titulo": "Crímenes en la niebla: un detective en los callejones de Londres"
+            "titulo": "Crímenes en la niebla: un detective en los callejones de Londres",
+            "popularidad": 4.8
         },
         {
-            "titulo": "La desaparición de la heredera en la mansión de los Van Der Waal"
+            "titulo": "La desaparición de la heredera en la mansión de los Van Der Waal",
+            "popularidad": 4.7
         },
         {
-            "titulo": "Secretos enterrados bajo el jardín de la casa victoriana"
+            "titulo": "Secretos enterrados bajo el jardín de la casa victoriana",
+            "popularidad": 4.5
         },
         {
-            "titulo": "El espejo maldito que revelaba más de lo que ocultaba"
+            "titulo": "El espejo maldito que revelaba más de lo que ocultaba",
+            "popularidad": 4.3
         },
         {
-            "titulo": "El caso del reloj detenido a medianoche"
+            "titulo": "El caso del reloj detenido a medianoche",
+            "popularidad": 4.4
+        },
+        {
+            "titulo": "La habitación cerrada y la carta sin firmar",
+            "popularidad": 4.2
+        },
+        {
+            "titulo": "El susurro en la casa del acantilado",
+            "popularidad": 4.1
+        },
+        {
+            "titulo": "Tras la máscara del asesino invisible",
+            "popularidad": 4.7
+        },
+        {
+            "titulo": "Sombras que caminan entre los pasillos del orfanato",
+            "popularidad": 4.5
         }
     ]
 }

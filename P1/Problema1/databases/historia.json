@@ -2,22 +2,44 @@
     "tipo_doc": "historia",
     "datos": [
         {
-            "titulo": "El legado cultural del Imperio Bizantino en Europa Oriental"
+            "titulo": "El legado cultural del Imperio Bizantino en Europa Oriental",
+            "popularidad": 3.4
         },
         {
-            "titulo": "Revoluciones del siglo XIX y su impacto en las democracias modernas"
+            "titulo": "Revoluciones del siglo XIX y su impacto en las democracias modernas",
+            "popularidad": 4.1
         },
         {
-            "titulo": "La colonización española en América y sus consecuencias sociales"
+            "titulo": "La colonización española en América y sus consecuencias sociales",
+            "popularidad": 4.3
         },
         {
-            "titulo": "Análisis histórico de las guerras mundiales y sus tratados de paz"
+            "titulo": "Análisis histórico de las guerras mundiales y sus tratados de paz",
+            "popularidad": 4.7
         },
         {
-            "titulo": "Resistencia indígena en América Latina frente a la conquista"
+            "titulo": "Resistencia indígena en América Latina frente a la conquista",
+            "popularidad": 3.9
         },
         {
-            "titulo": "Transformaciones urbanas durante la Revolución Industrial"
+            "titulo": "Transformaciones urbanas durante la Revolución Industrial",
+            "popularidad": 3.2
+        },
+        {
+            "titulo": "El papel de las mujeres en la historia de la humanidad",
+            "popularidad": 4.5
+        },
+        {
+            "titulo": "Imperios perdidos: de Mesopotamia al Imperio Otomano",
+            "popularidad": 3.8
+        },
+        {
+            "titulo": "Los mapas antiguos y la evolución del pensamiento geográfico",
+            "popularidad": 2.9
+        },
+        {
+            "titulo": "Historia y política: una mirada al siglo XX latinoamericano",
+            "popularidad": 4.0
         }
     ]
 }

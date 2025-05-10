@@ -2,22 +2,44 @@
     "tipo_doc": "biografia",
     "datos": [
         {
-            "titulo": "La vida de Nikola Tesla y su legado en la era eléctrica"
+            "titulo": "La vida de Nikola Tesla y su legado en la era eléctrica",
+            "popularidad": 4.8
         },
         {
-            "titulo": "Diarios íntimos de una activista durante la dictadura chilena"
+            "titulo": "Diarios íntimos de una activista durante la dictadura chilena",
+            "popularidad": 4.3
         },
         {
-            "titulo": "El viaje espiritual y científico de Carl Sagan"
+            "titulo": "El viaje espiritual y científico de Carl Sagan",
+            "popularidad": 4.6
         },
         {
-            "titulo": "Desde la pobreza hasta el Nobel: historia de Malala Yousafzai"
+            "titulo": "Desde la pobreza hasta el Nobel: historia de Malala Yousafzai",
+            "popularidad": 4.7
         },
         {
-            "titulo": "Los años de juventud de Gabriel García Márquez en Aracataca"
+            "titulo": "Los años de juventud de Gabriel García Márquez en Aracataca",
+            "popularidad": 4.5
         },
         {
-            "titulo": "Confesiones de un pianista prodigio en tiempos de guerra"
+            "titulo": "Confesiones de un pianista prodigio en tiempos de guerra",
+            "popularidad": 4.0
+        },
+        {
+            "titulo": "Nelson Mandela: lucha, prisión y presidencia",
+            "popularidad": 4.9
+        },
+        {
+            "titulo": "Frida Kahlo: dolor, arte y revolución personal",
+            "popularidad": 4.6
+        },
+        {
+            "titulo": "Steve Jobs: innovación, caída y redención de un visionario",
+            "popularidad": 4.4
+        },
+        {
+            "titulo": "Marie Curie: ciencia entre prejuicios y radiación",
+            "popularidad": 4.8
         }
     ]
 }

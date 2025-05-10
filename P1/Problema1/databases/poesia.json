@@ -2,22 +2,44 @@
     "tipo_doc": "poesia",
     "datos": [
         {
-            "titulo": "Versos al viento: antología de amores pasajeros"
+            "titulo": "Versos al viento: antología de amores pasajeros",
+            "popularidad": 4.5
         },
         {
-            "titulo": "Ecos del alma en noches de luna llena"
+            "titulo": "Ecos del alma en noches de luna llena",
+            "popularidad": 4.6
         },
         {
-            "titulo": "Palabras que brotan del silencio interior"
+            "titulo": "Palabras que brotan del silencio interior",
+            "popularidad": 4.7
         },
         {
-            "titulo": "Rimas perdidas entre calles empedradas"
+            "titulo": "Rimas perdidas entre calles empedradas",
+            "popularidad": 4.3
         },
         {
-            "titulo": "Suspiros y promesas escritas en papel viejo"
+            "titulo": "Suspiros y promesas escritas en papel viejo",
+            "popularidad": 4.4
         },
         {
-            "titulo": "Fragmentos de luz entre sombras del corazón"
+            "titulo": "Fragmentos de luz entre sombras del corazón",
+            "popularidad": 4.8
+        },
+        {
+            "titulo": "Cicatrices que cantan en voz baja",
+            "popularidad": 4.2
+        },
+        {
+            "titulo": "El tiempo escrito en metáforas de fuego",
+            "popularidad": 4.1
+        },
+        {
+            "titulo": "Oda a lo que no dijimos nunca",
+            "popularidad": 4.6
+        },
+        {
+            "titulo": "Líneas torcidas de una nostalgia recta",
+            "popularidad": 4.3
         }
     ]
 }
