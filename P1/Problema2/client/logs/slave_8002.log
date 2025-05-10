@@ -1,0 +1,8 @@
+operacion,estado,t_ini,t_fin,puerto_maquina,busqueda,tipo_busqueda,cant_resultados,tamano_respuesta_bytes,edad,ranking
+conection to master,OK,2025-05-10T13:15:00,2025-05-10T13:15:01,8002,,,,,,
+busqueda,OK,2025-05-10T13:15:10,2025-05-10T13:15:11,8002,"Inteligencia Artificial",tema,25,3520,28,4.7
+busqueda,OK,2025-05-10T13:17:00,2025-05-10T13:17:03,8002,"Redes neuronales",titulo,18,3100,30,4.6
+disconected from master,OK,2025-05-10T13:30:00,2025-05-10T13:30:01,8002,,,,,,
+conection to master,OK,2025-05-10T13:15:00,2025-05-10T13:15:01,8002,,,,,,
+busqueda,OK,2025-05-10T13:17:00,2025-05-10T13:17:03,8002,"Redes neuronalesssssss",titulo,18,3100,30,4.6
+busqueda,OK,2025-05-10T13:17:00,2025-05-10T13:17:03,8002,"Redes neuronalesasdasd",titulo,18,3100,30,4.6
