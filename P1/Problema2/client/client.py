@@ -8,6 +8,7 @@ HOST = os.getenv("NAMESERVER_HOST")
 PORT = int(os.getenv("NAMESERVER_PORT"))
 OBJ = os.getenv("NAMESERVER_OBJECT")
 MEMORIA = os.getenv("MEMORIAS")
+LOGS_PATH = os.getenv("LOGS_SLAVES_PATH")
 
 def enviar_logs(ruta_log):
     try:
@@ -45,8 +46,10 @@ def enviar_logs(ruta_log):
         print(f"Error al enviar logs: {e}")
 
 if __name__ == "__main__":
+    ruta = LOGS_PATH
     while True:
-        ruta = input("\nIngrese la ruta del log que desea enviar al servidor: ")
+        print("\nLeyendo archivos desde Problema1/log/")
+        ruta += input("Ingrese el nombre del log que desea enviar (ej. esclavo_8001.log): ")
         if os.path.isfile(ruta):
             break
         else:
@@ -54,7 +57,7 @@ if __name__ == "__main__":
     
     while True:
         enviar_logs(ruta)
-        continuar = input("\n¿Desea volver a enviar el log? (s/n): ").strip().lower()
+        continuar = input(f"\n¿Desea volver a enviar el log {os.path.basename(ruta)}? (s/n): ").strip().lower()
         if continuar != "s":
             print("Cerrando cliente ...\n")
             break

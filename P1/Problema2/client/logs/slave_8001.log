@@ -1,8 +1,0 @@
-operacion,estado,t_ini,t_fin,puerto_maquina,busqueda,tipo_busqueda,cant_resultados,tamano_respuesta_bytes,edad,ranking
-conection to master,OK,2025-05-10T12:00:00,2025-05-10T12:00:01,8001,,,,,,
-busqueda,OK,2025-05-10T12:00:05,2025-05-10T12:00:06,8001,"La guerra del fuego",titulo,12,1840,35,4.5
-busqueda,OK,2025-05-10T12:01:00,2025-05-10T12:01:02,8001,"Prehistoria",tema,7,980,42,3.9
-disconected from master,OK,2025-05-10T12:10:00,2025-05-10T12:10:01,8001,,,,,,
-busqueda,OK,2025-05-10T12:01:00,2025-05-10T12:01:02,8001,"Prehistoriaaaa",tema,7,980,42,3.9
-busqueda,OK,2025-05-10T12:01:00,2025-05-10T12:01:02,8001,"Prehistoriaddddd",tema,7,980,42,3.9
-

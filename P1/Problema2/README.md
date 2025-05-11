@@ -3,7 +3,6 @@ En el Problema 1, cada nodo esclavo genera su propio log de eventos. En esta eta
 
 ## Estructuración de carpetas
 - Client
-    - `logs/`: Carpeta que almacena todos los logs generados por los esclavos en el Problema 1.
     - `memorias/`: Carpeta que guarda el número de la última línea enviada de cada log. Esto permite retomar el envío desde ese punto en caso de fallos o si se agregan nuevas líneas al log, evitando reenviar datos duplicados.
     - `client.py:` Script del cliente RMI encargado de enviar, línea por línea, el contenido del log esclavo al servidor RMI.
 - Server
@@ -16,7 +15,8 @@ En el Problema 1, cada nodo esclavo genera su propio log de eventos. En esta eta
     - `NAMESERVER_PORT=9090`
     - `NAMESERVER_OBJECT=logs.centralizados`
     - `MEMORIAS=memorias/memoria`
-    - `LOG_HEADER=operacion,estado,t_ini,t_fin,puerto_maquina,busqueda,tipo_busqueda,cant_resultados,tamano_respuesta_bytes,edad,ranking,database`
+    - `LOG_HEADER=operacion;estado;t_ini;t_fin;puerto_maquina;busqueda;tipo_busqueda;cant_resultados;tamano_respuesta_bytes;edad;ranking;database`
+    - `LOGS_SLAVES_PATH=../../Problema1/log/`
     - `LOG_CENTRALIZADO=../log_centralizado.log`
 
 - Instalar las dependencias:
