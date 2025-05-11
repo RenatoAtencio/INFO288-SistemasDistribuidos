@@ -18,8 +18,8 @@ server/.env
     HOST=localhost
     HOSTPORT=5000
 
-    SLAVEPORT=8001
-    SLAVEDB=autoayuda,biografia
+    SLAVEPORT=8003
+    SLAVEDB=misterio,fantasia
 
     RELOAD=0 
 
@@ -28,6 +28,12 @@ server/.env
 
     HOSTENTRYPOINT=entry
     HOSTEXITPOINT=exit
+
+    LOGDIRECTORY=log
+    LOGCOLUMNS=operacion,estado,t_ini,t_fin,puerto_maquina,busqueda,tipo_busqueda,cant_resultados,tamano_respuesta_bytes,edad,ranking,database
+
+    PESOTITULO=0.45
+    PESOPREFERENCIAS=0.55
 
 Como ejecutar:
 
