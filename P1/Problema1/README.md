@@ -1,4 +1,9 @@
-Dependencias
+# 📘 Proyecto: Sistema de Búsqueda Distribuida
+
+## 🔧 Dependencias
+
+Asegúrate de tener instaladas las siguientes dependencias:
+
     fastapi
     uvicorn
     httpx
@@ -6,14 +11,20 @@ Dependencias
     pydantic
     uuid
 
-client/.env
+---
+
+## ⚙️ Archivos de configuración `.env`
+
+### 📁 `client/.env`
+
     PROTOCOLO=http
     HOST=localhost
     HOSTPORT=5000
 
     CLIENTHOSTENDPOINT=query
 
-server/.env
+### 📁 `server/.env`
+
     PROTOCOLO=http
     HOST=localhost
     HOSTPORT=5000
@@ -21,7 +32,7 @@ server/.env
     SLAVEPORT=8003
     SLAVEDB=misterio,fantasia
 
-    RELOAD=0 
+    RELOAD=0
 
     CLIENTHOSTENDPOINT=query
     HOSTSLAVEENDPOINT=query
@@ -35,11 +46,40 @@ server/.env
     PESOTITULO=0.45
     PESOPREFERENCIAS=0.55
 
-Como ejecutar:
+---
 
-En /server
-    > python maestro.py -> esto levanta el maestro 
-    > python esclavo.py -> esto levanta el esclavo, asegurarse de cambiar el puerto y las database que toma en el .env cada vez que se levanta un esclavo
+## ▶️ Cómo ejecutar el sistema
 
-En /client
-    > python cliente.py -> esto ejecuta un programa el cual permite realizar la busqueda al maestro, se debe indicar edad, tipo de busqueda y la busqueda. Se deben seguir los pasos indicados en la consola
+### 1. Ejecutar el servidor
+
+Ubícate en el directorio `/server`:
+
+    > cd server
+
+Primero, levanta el **maestro**:
+
+    > python maestro.py
+
+Luego, en otra terminal, levanta uno o más **esclavos**:
+
+    > python esclavo.py
+
+> 🔁 **Importante:** Cada vez que levantes un esclavo, asegúrate de modificar en el archivo `.env`:
+>
+> * El valor de `SLAVEPORT` (puerto distinto para cada esclavo)
+> * El valor de `SLAVEDB` (temáticas o bases de datos distintas, separadas por coma)
+
+---
+
+### 2. Ejecutar el cliente
+
+Ubícate en el directorio `/client`:
+
+    > cd client
+    > python cliente.py
+
+Este programa te permitirá realizar búsquedas al maestro. Deberás seguir las instrucciones que aparecen por consola e ingresar:
+
+* Edad del usuario
+* Tipo de búsqueda
+* Término de búsqueda
