@@ -1,0 +1,21 @@
+operacion;estado;t_ini;t_fin;puerto_maquina;busqueda;tipo_busqueda;cant_resultados;tamano_respuesta_bytes;edad;ranking;database
+conection_to_master;success;2025-05-11 17:25:55.048273;2025-05-11 17:25:55.081100;8006;;;;;;;
+mandar_resultados_a_master;success;2025-05-11 17:26:28.682301;2025-05-11 17:26:28.704806;8006;busqueda test;titulo;0;56;23;;
+busqueda en db;success;2025-05-11 17:27:32.525051;2025-05-11 17:27:32.525051;8006;trasnformaciones interestelasres del viento como enigma;titulo;;;32;3.39;poesia
+mandar_resultados_a_master;success;2025-05-11 17:27:32.525051;2025-05-11 17:27:32.526562;8006;trasnformaciones interestelasres del viento como enigma;titulo;1;88;32;;
+busqueda en db;success;2025-05-11 17:28:31.605619;2025-05-11 17:28:31.605619;8006;blockchain entre cartas del legado cultural de nikola tesla;titulo;;;43;3.39;poesia
+busqueda en db;success;2025-05-11 17:28:31.606554;2025-05-11 17:28:31.606554;8006;blockchain entre cartas del legado cultural de nikola tesla;titulo;;;43;3.39;poesia
+mandar_resultados_a_master;success;2025-05-11 17:28:31.605619;2025-05-11 17:28:31.606554;8006;blockchain entre cartas del legado cultural de nikola tesla;titulo;2;88;43;;
+busqueda en db;success;2025-05-11 17:29:16.406459;2025-05-11 17:29:16.406459;8006;poesia;tipo_doc;;;32;14.85;poesia
+busqueda en db;success;2025-05-11 17:29:16.406459;2025-05-11 17:29:16.406459;8006;poesia;tipo_doc;;;32;15.18;poesia
+busqueda en db;success;2025-05-11 17:29:16.406459;2025-05-11 17:29:16.406459;8006;poesia;tipo_doc;;;32;15.51;poesia
+busqueda en db;success;2025-05-11 17:29:16.407966;2025-05-11 17:29:16.407966;8006;poesia;tipo_doc;;;32;14.19;poesia
+busqueda en db;success;2025-05-11 17:29:16.407966;2025-05-11 17:29:16.407966;8006;poesia;tipo_doc;;;32;14.52;poesia
+busqueda en db;success;2025-05-11 17:29:16.408973;2025-05-11 17:29:16.408973;8006;poesia;tipo_doc;;;32;15.84;poesia
+busqueda en db;success;2025-05-11 17:29:16.409480;2025-05-11 17:29:16.409480;8006;poesia;tipo_doc;;;32;13.86;poesia
+busqueda en db;success;2025-05-11 17:29:16.410351;2025-05-11 17:29:16.410351;8006;poesia;tipo_doc;;;32;13.53;poesia
+busqueda en db;success;2025-05-11 17:29:16.410488;2025-05-11 17:29:16.410488;8006;poesia;tipo_doc;;;32;15.18;poesia
+busqueda en db;success;2025-05-11 17:29:16.410488;2025-05-11 17:29:16.410488;8006;poesia;tipo_doc;;;32;14.19;poesia
+mandar_resultados_a_master;success;2025-05-11 17:29:16.405505;2025-05-11 17:29:16.411488;8006;poesia;tipo_doc;10;88;32;;
+mandar_resultados_a_master;success;2025-05-11 17:30:13.659943;2025-05-11 17:30:13.660951;8006;redescubre tu proposito;titulo;0;56;57;;
+disconect_from_master;success;2025-05-11 17:31:02.551259;2025-05-11 17:31:02.557841;8006;;;;;;;

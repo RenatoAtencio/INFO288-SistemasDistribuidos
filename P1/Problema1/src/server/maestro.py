@@ -15,6 +15,7 @@ HOST = os.getenv("HOST")
 HOSTPORT = int(os.getenv("HOSTPORT"))
 HOSTSLAVEENDPOINT = os.getenv("HOSTSLAVEENDPOINT") 
 RELOAD=bool(int(os.getenv("RELOAD")))
+puerto = int(os.getenv("HOSTPORT"))
 
 @app.get("/status")
 def read_root():
@@ -146,7 +147,4 @@ def salidaEsclavo(puerto: int, conected: bool):
     return{"respuesta": "desconexion exitosa"}
 
 if __name__ == "__main__":
-    puerto = int(os.getenv("HOSTPORT"))
-    url = os.getenv("URL")
-
     uvicorn.run("maestro:app", host=HOST, port=puerto, reload=RELOAD)

@@ -19,3 +19,19 @@ busqueda en db;success;2025-05-10 20:40:34.821467;2025-05-10 20:40:34.822974;800
 busqueda en db;success;2025-05-10 20:40:34.822974;2025-05-10 20:40:34.822974;8000;tecnologia;tipo_doc;;;35;16.28;tecnologia
 mandar_resultados_a_master;success;2025-05-10 20:40:34.817473;2025-05-10 20:40:34.823984;8000;tecnologia;tipo_doc;10;88;35;;
 disconect_from_master;success;2025-05-10 20:40:48.251375;2025-05-10 20:40:48.257722;8000;;;;;;;
+conection_to_master;success;2025-05-11 17:24:22.828764;2025-05-11 17:24:22.896707;8000;;;;;;;
+mandar_resultados_a_master;success;2025-05-11 17:26:26.154044;2025-05-11 17:26:26.176754;8000;busqueda test;titulo;0;56;23;;
+mandar_resultados_a_master;success;2025-05-11 17:27:30.118982;2025-05-11 17:27:30.118982;8000;trasnformaciones interestelasres del viento como enigma;titulo;0;56;32;;
+mandar_resultados_a_master;success;2025-05-11 17:28:29.136799;2025-05-11 17:28:29.138312;8000;blockchain entre cartas del legado cultural de nikola tesla;titulo;0;56;43;;
+busqueda en db;success;2025-05-11 17:30:11.210010;2025-05-11 17:30:11.210010;8000;redescubre tu proposito;titulo;;;57;3.108;autoayuda
+busqueda en db;success;2025-05-11 17:30:11.210010;2025-05-11 17:30:11.210010;8000;redescubre tu proposito;titulo;;;57;2.979;autoayuda
+busqueda en db;success;2025-05-11 17:30:11.210838;2025-05-11 17:30:11.210838;8000;redescubre tu proposito;titulo;;;57;3.005;autoayuda
+mandar_resultados_a_master;success;2025-05-11 17:30:11.208830;2025-05-11 17:30:11.211887;8000;redescubre tu proposito;titulo;3;88;57;;
+busqueda en db;success;2025-05-11 17:30:51.666503;2025-05-11 17:30:51.666503;8000;autoayuda;tipo_doc;;;32;21.038;autoayuda
+busqueda en db;success;2025-05-11 17:30:51.666503;2025-05-11 17:30:51.666503;8000;autoayuda;tipo_doc;;;32;20.103;autoayuda
+busqueda en db;success;2025-05-11 17:30:51.666503;2025-05-11 17:30:51.666503;8000;autoayuda;tipo_doc;;;32;21.505;autoayuda
+busqueda en db;success;2025-05-11 17:30:51.668009;2025-05-11 17:30:51.668009;8000;autoayuda;tipo_doc;;;32;19.635;autoayuda
+busqueda en db;success;2025-05-11 17:30:51.669020;2025-05-11 17:30:51.669020;8000;autoayuda;tipo_doc;;;32;18.7;autoayuda
+busqueda en db;success;2025-05-11 17:30:51.669529;2025-05-11 17:30:51.669529;8000;autoayuda;tipo_doc;;;32;20.57;autoayuda
+mandar_resultados_a_master;success;2025-05-11 17:30:51.666503;2025-05-11 17:30:51.669529;8000;autoayuda;tipo_doc;6;88;32;;
+disconect_from_master;success;2025-05-11 17:31:04.165665;2025-05-11 17:31:04.170918;8000;;;;;;;

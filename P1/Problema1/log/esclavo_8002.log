@@ -7,3 +7,11 @@ busqueda en db;success;2025-05-10 20:38:52.071982;2025-05-10 20:38:52.071982;800
 mandar_resultados_a_master;success;2025-05-10 20:38:52.069982;2025-05-10 20:38:52.073488;8002;cronicas de sombras y runas del mar;titulo;1;88;23;;
 mandar_resultados_a_master;success;2025-05-10 20:39:14.966688;2025-05-10 20:39:14.968693;8002;arqueologia muestras estelares ;titulo;0;56;32;;
 disconect_from_master;success;2025-05-10 20:40:46.390792;2025-05-10 20:40:46.395815;8002;;;;;;;
+conection_to_master;success;2025-05-11 17:24:54.200762;2025-05-11 17:24:54.238933;8002;;;;;;;
+mandar_resultados_a_master;success;2025-05-11 17:26:26.965324;2025-05-11 17:26:26.984356;8002;busqueda test;titulo;0;56;23;;
+mandar_resultados_a_master;success;2025-05-11 17:27:30.888751;2025-05-11 17:27:30.890127;8002;trasnformaciones interestelasres del viento como enigma;titulo;0;56;32;;
+busqueda en db;success;2025-05-11 17:28:30.006810;2025-05-11 17:28:30.006810;8002;blockchain entre cartas del legado cultural de nikola tesla;titulo;;;43;3.768;biografia
+busqueda en db;success;2025-05-11 17:28:30.007829;2025-05-11 17:28:30.007829;8002;blockchain entre cartas del legado cultural de nikola tesla;titulo;;;43;3.65;biografia
+mandar_resultados_a_master;success;2025-05-11 17:28:30.006226;2025-05-11 17:28:30.008351;8002;blockchain entre cartas del legado cultural de nikola tesla;titulo;2;88;43;;
+mandar_resultados_a_master;success;2025-05-11 17:30:12.030459;2025-05-11 17:30:12.031555;8002;redescubre tu proposito;titulo;0;56;57;;
+disconect_from_master;success;2025-05-11 17:31:03.568588;2025-05-11 17:31:03.574114;8002;;;;;;;

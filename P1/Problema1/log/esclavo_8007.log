@@ -1,0 +1,90 @@
+operacion;estado;t_ini;t_fin;puerto_maquina;busqueda;tipo_busqueda;cant_resultados;tamano_respuesta_bytes;edad;ranking;database
+conection_to_master;success;2025-05-11 17:26:12.528988;2025-05-11 17:26:12.562025;8007;;;;;;;
+mandar_resultados_a_master;success;2025-05-11 17:26:29.093031;2025-05-11 17:26:29.115757;8007;busqueda test;titulo;0;56;23;;
+mandar_resultados_a_master;success;2025-05-11 17:27:32.929663;2025-05-11 17:27:32.930646;8007;trasnformaciones interestelasres del viento como enigma;titulo;0;56;32;;
+busqueda en db;success;2025-05-11 17:28:32.008027;2025-05-11 17:28:32.008542;8007;blockchain entre cartas del legado cultural de nikola tesla;titulo;;;43;4.275;romance
+busqueda en db;success;2025-05-11 17:28:32.013345;2025-05-11 17:28:32.013345;8007;blockchain entre cartas del legado cultural de nikola tesla;titulo;;;43;4.2;romance
+busqueda en db;success;2025-05-11 17:28:32.014419;2025-05-11 17:28:32.014419;8007;blockchain entre cartas del legado cultural de nikola tesla;titulo;;;43;4.254;romance
+busqueda en db;success;2025-05-11 17:28:32.015364;2025-05-11 17:28:32.015364;8007;blockchain entre cartas del legado cultural de nikola tesla;titulo;;;43;4.475;tecnologia
+mandar_resultados_a_master;success;2025-05-11 17:28:32.008027;2025-05-11 17:28:32.015364;8007;blockchain entre cartas del legado cultural de nikola tesla;titulo;4;88;43;;
+busqueda en db;success;2025-05-11 17:28:50.970709;2025-05-11 17:28:50.970709;8007;romance;tipo_doc;;;53;19.387;romance
+busqueda en db;success;2025-05-11 17:28:50.971706;2025-05-11 17:28:50.972214;8007;romance;tipo_doc;;;53;18.975;romance
+busqueda en db;success;2025-05-11 17:28:50.972214;2025-05-11 17:28:50.972214;8007;romance;tipo_doc;;;53;17.738;romance
+busqueda en db;success;2025-05-11 17:28:50.972214;2025-05-11 17:28:50.972214;8007;romance;tipo_doc;;;53;18.562;romance
+busqueda en db;success;2025-05-11 17:28:50.973221;2025-05-11 17:28:50.973221;8007;romance;tipo_doc;;;53;18.15;romance
+busqueda en db;success;2025-05-11 17:28:50.973221;2025-05-11 17:28:50.973221;8007;romance;tipo_doc;;;53;19.8;romance
+busqueda en db;success;2025-05-11 17:28:50.974222;2025-05-11 17:28:50.974222;8007;romance;tipo_doc;;;53;17.325;romance
+busqueda en db;success;2025-05-11 17:28:50.974222;2025-05-11 17:28:50.974222;8007;romance;tipo_doc;;;53;16.5;romance
+busqueda en db;success;2025-05-11 17:28:50.975222;2025-05-11 17:28:50.975222;8007;romance;tipo_doc;;;53;16.912;romance
+busqueda en db;success;2025-05-11 17:28:50.975222;2025-05-11 17:28:50.975222;8007;romance;tipo_doc;;;53;17.738;romance
+mandar_resultados_a_master;success;2025-05-11 17:28:50.970709;2025-05-11 17:28:50.976222;8007;romance;tipo_doc;10;88;53;;
+busqueda en db;success;2025-05-11 17:28:51.362679;2025-05-11 17:28:51.362679;8007;tecnologia;tipo_doc;;;53;19.8;tecnologia
+busqueda en db;success;2025-05-11 17:28:51.362679;2025-05-11 17:28:51.362679;8007;tecnologia;tipo_doc;;;53;18.48;tecnologia
+busqueda en db;success;2025-05-11 17:28:51.363624;2025-05-11 17:28:51.363624;8007;tecnologia;tipo_doc;;;53;21.12;tecnologia
+busqueda en db;success;2025-05-11 17:28:51.363624;2025-05-11 17:28:51.363624;8007;tecnologia;tipo_doc;;;53;20.24;tecnologia
+busqueda en db;success;2025-05-11 17:28:51.364625;2025-05-11 17:28:51.364625;8007;tecnologia;tipo_doc;;;53;19.36;tecnologia
+busqueda en db;success;2025-05-11 17:28:51.364625;2025-05-11 17:28:51.364625;8007;tecnologia;tipo_doc;;;53;18.04;tecnologia
+busqueda en db;success;2025-05-11 17:28:51.365630;2025-05-11 17:28:51.365630;8007;tecnologia;tipo_doc;;;53;18.92;tecnologia
+busqueda en db;success;2025-05-11 17:28:51.365630;2025-05-11 17:28:51.365630;8007;tecnologia;tipo_doc;;;53;17.16;tecnologia
+busqueda en db;success;2025-05-11 17:28:51.366623;2025-05-11 17:28:51.366623;8007;tecnologia;tipo_doc;;;53;17.6;tecnologia
+busqueda en db;success;2025-05-11 17:28:51.366623;2025-05-11 17:28:51.366623;8007;tecnologia;tipo_doc;;;53;16.28;tecnologia
+mandar_resultados_a_master;success;2025-05-11 17:28:51.361690;2025-05-11 17:28:51.366623;8007;tecnologia;tipo_doc;10;88;53;;
+busqueda en db;success;2025-05-11 17:29:16.819946;2025-05-11 17:29:16.819946;8007;romance;tipo_doc;;;32;19.387;romance
+busqueda en db;success;2025-05-11 17:29:16.819946;2025-05-11 17:29:16.819946;8007;romance;tipo_doc;;;32;18.975;romance
+busqueda en db;success;2025-05-11 17:29:16.820950;2025-05-11 17:29:16.820950;8007;romance;tipo_doc;;;32;17.738;romance
+busqueda en db;success;2025-05-11 17:29:16.820950;2025-05-11 17:29:16.820950;8007;romance;tipo_doc;;;32;18.562;romance
+busqueda en db;success;2025-05-11 17:29:16.821946;2025-05-11 17:29:16.821946;8007;romance;tipo_doc;;;32;18.15;romance
+busqueda en db;success;2025-05-11 17:29:16.821946;2025-05-11 17:29:16.821946;8007;romance;tipo_doc;;;32;19.8;romance
+busqueda en db;success;2025-05-11 17:29:16.821946;2025-05-11 17:29:16.822945;8007;romance;tipo_doc;;;32;17.325;romance
+busqueda en db;success;2025-05-11 17:29:16.822945;2025-05-11 17:29:16.822945;8007;romance;tipo_doc;;;32;16.5;romance
+busqueda en db;success;2025-05-11 17:29:16.823945;2025-05-11 17:29:16.823945;8007;romance;tipo_doc;;;32;16.912;romance
+busqueda en db;success;2025-05-11 17:29:16.823945;2025-05-11 17:29:16.823945;8007;romance;tipo_doc;;;32;17.738;romance
+mandar_resultados_a_master;success;2025-05-11 17:29:16.818937;2025-05-11 17:29:16.824945;8007;romance;tipo_doc;10;88;32;;
+busqueda en db;success;2025-05-11 17:29:33.076246;2025-05-11 17:29:33.076246;8007;romance;tipo_doc;;;32;19.387;romance
+busqueda en db;success;2025-05-11 17:29:33.076246;2025-05-11 17:29:33.076246;8007;romance;tipo_doc;;;32;18.975;romance
+busqueda en db;success;2025-05-11 17:29:33.076246;2025-05-11 17:29:33.076246;8007;romance;tipo_doc;;;32;17.738;romance
+busqueda en db;success;2025-05-11 17:29:33.076246;2025-05-11 17:29:33.077754;8007;romance;tipo_doc;;;32;18.562;romance
+busqueda en db;success;2025-05-11 17:29:33.077754;2025-05-11 17:29:33.077754;8007;romance;tipo_doc;;;32;18.15;romance
+busqueda en db;success;2025-05-11 17:29:33.078762;2025-05-11 17:29:33.078762;8007;romance;tipo_doc;;;32;19.8;romance
+busqueda en db;success;2025-05-11 17:29:33.079269;2025-05-11 17:29:33.079269;8007;romance;tipo_doc;;;32;17.325;romance
+busqueda en db;success;2025-05-11 17:29:33.079269;2025-05-11 17:29:33.079269;8007;romance;tipo_doc;;;32;16.5;romance
+busqueda en db;success;2025-05-11 17:29:33.080275;2025-05-11 17:29:33.080275;8007;romance;tipo_doc;;;32;16.912;romance
+busqueda en db;success;2025-05-11 17:29:33.080275;2025-05-11 17:29:33.080275;8007;romance;tipo_doc;;;32;17.738;romance
+mandar_resultados_a_master;success;2025-05-11 17:29:33.075222;2025-05-11 17:29:33.081277;8007;romance;tipo_doc;10;88;32;;
+busqueda en db;success;2025-05-11 17:29:33.491895;2025-05-11 17:29:33.491895;8007;tecnologia;tipo_doc;;;32;19.8;tecnologia
+busqueda en db;success;2025-05-11 17:29:33.492895;2025-05-11 17:29:33.492895;8007;tecnologia;tipo_doc;;;32;18.48;tecnologia
+busqueda en db;success;2025-05-11 17:29:33.492895;2025-05-11 17:29:33.492895;8007;tecnologia;tipo_doc;;;32;21.12;tecnologia
+busqueda en db;success;2025-05-11 17:29:33.493894;2025-05-11 17:29:33.493894;8007;tecnologia;tipo_doc;;;32;20.24;tecnologia
+busqueda en db;success;2025-05-11 17:29:33.493894;2025-05-11 17:29:33.493894;8007;tecnologia;tipo_doc;;;32;19.36;tecnologia
+busqueda en db;success;2025-05-11 17:29:33.494896;2025-05-11 17:29:33.494896;8007;tecnologia;tipo_doc;;;32;18.04;tecnologia
+busqueda en db;success;2025-05-11 17:29:33.494896;2025-05-11 17:29:33.494896;8007;tecnologia;tipo_doc;;;32;18.92;tecnologia
+busqueda en db;success;2025-05-11 17:29:33.494896;2025-05-11 17:29:33.494896;8007;tecnologia;tipo_doc;;;32;17.16;tecnologia
+busqueda en db;success;2025-05-11 17:29:33.495894;2025-05-11 17:29:33.495894;8007;tecnologia;tipo_doc;;;32;17.6;tecnologia
+busqueda en db;success;2025-05-11 17:29:33.496893;2025-05-11 17:29:33.496893;8007;tecnologia;tipo_doc;;;32;16.28;tecnologia
+mandar_resultados_a_master;success;2025-05-11 17:29:33.491895;2025-05-11 17:29:33.496893;8007;tecnologia;tipo_doc;10;88;32;;
+disconect_from_master;success;2025-05-11 17:29:36.433670;2025-05-11 17:29:36.439714;8007;;;;;;;
+conection_to_master;success;2025-05-11 17:29:40.043332;2025-05-11 17:29:40.076682;8007;;;;;;;
+busqueda en db;success;2025-05-11 17:29:48.285565;2025-05-11 17:29:48.285565;8007;romance;tipo_doc;;;35;19.387;romance
+busqueda en db;success;2025-05-11 17:29:48.285565;2025-05-11 17:29:48.286562;8007;romance;tipo_doc;;;35;18.975;romance
+busqueda en db;success;2025-05-11 17:29:48.286562;2025-05-11 17:29:48.286562;8007;romance;tipo_doc;;;35;17.738;romance
+busqueda en db;success;2025-05-11 17:29:48.286562;2025-05-11 17:29:48.286562;8007;romance;tipo_doc;;;35;18.562;romance
+busqueda en db;success;2025-05-11 17:29:48.286562;2025-05-11 17:29:48.286562;8007;romance;tipo_doc;;;35;18.15;romance
+busqueda en db;success;2025-05-11 17:29:48.288069;2025-05-11 17:29:48.288069;8007;romance;tipo_doc;;;35;19.8;romance
+busqueda en db;success;2025-05-11 17:29:48.288069;2025-05-11 17:29:48.288069;8007;romance;tipo_doc;;;35;17.325;romance
+busqueda en db;success;2025-05-11 17:29:48.288069;2025-05-11 17:29:48.288069;8007;romance;tipo_doc;;;35;16.5;romance
+busqueda en db;success;2025-05-11 17:29:48.289076;2025-05-11 17:29:48.289076;8007;romance;tipo_doc;;;35;16.912;romance
+busqueda en db;success;2025-05-11 17:29:48.289076;2025-05-11 17:29:48.289076;8007;romance;tipo_doc;;;35;17.738;romance
+mandar_resultados_a_master;success;2025-05-11 17:29:48.284630;2025-05-11 17:29:48.289076;8007;romance;tipo_doc;10;88;35;;
+busqueda en db;success;2025-05-11 17:29:48.678810;2025-05-11 17:29:48.678810;8007;tecnologia;tipo_doc;;;35;19.8;tecnologia
+busqueda en db;success;2025-05-11 17:29:48.679969;2025-05-11 17:29:48.679969;8007;tecnologia;tipo_doc;;;35;18.48;tecnologia
+busqueda en db;success;2025-05-11 17:29:48.680381;2025-05-11 17:29:48.680381;8007;tecnologia;tipo_doc;;;35;21.12;tecnologia
+busqueda en db;success;2025-05-11 17:29:48.680381;2025-05-11 17:29:48.680381;8007;tecnologia;tipo_doc;;;35;20.24;tecnologia
+busqueda en db;success;2025-05-11 17:29:48.681467;2025-05-11 17:29:48.681467;8007;tecnologia;tipo_doc;;;35;19.36;tecnologia
+busqueda en db;success;2025-05-11 17:29:48.682389;2025-05-11 17:29:48.682389;8007;tecnologia;tipo_doc;;;35;18.04;tecnologia
+busqueda en db;success;2025-05-11 17:29:48.682389;2025-05-11 17:29:48.682389;8007;tecnologia;tipo_doc;;;35;18.92;tecnologia
+busqueda en db;success;2025-05-11 17:29:48.683394;2025-05-11 17:29:48.683394;8007;tecnologia;tipo_doc;;;35;17.16;tecnologia
+busqueda en db;success;2025-05-11 17:29:48.683394;2025-05-11 17:29:48.683394;8007;tecnologia;tipo_doc;;;35;17.6;tecnologia
+busqueda en db;success;2025-05-11 17:29:48.684387;2025-05-11 17:29:48.684387;8007;tecnologia;tipo_doc;;;35;16.28;tecnologia
+mandar_resultados_a_master;success;2025-05-11 17:29:48.678810;2025-05-11 17:29:48.685394;8007;tecnologia;tipo_doc;10;88;35;;
+mandar_resultados_a_master;success;2025-05-11 17:30:14.060884;2025-05-11 17:30:14.061885;8007;redescubre tu proposito;titulo;0;56;57;;
+disconect_from_master;success;2025-05-11 17:31:06.365863;2025-05-11 17:31:06.380751;8007;;;;;;;

@@ -323,24 +323,19 @@ def busqueda(busqueda: str, tipo_busqueda: str, edad: int):
                 break
     else:
         return {"error" : "Tipo de busqueda no definido"}
-    
-
-    
-    print(rsp)
 
     cant = 0
     for e in rsp:
         cant += len(e["respuestas"])
 
-
-    fin2 = datetime.now()
+    fin1 = datetime.now()
     agregar_entrada_log(
         PATH_LOG,
         crear_entrada_log(
             operacion="mandar_resultados_a_master",
             estado="success",
             t_ini=ini1,
-            t_fin=fin2,
+            t_fin=fin1,
             puerto_maquina=SLAVEPORT,
             busqueda=busqueda,
             tipo_busqueda=tipo_busqueda,
@@ -350,6 +345,7 @@ def busqueda(busqueda: str, tipo_busqueda: str, edad: int):
         ),
         COLUMNAS_LOG
     )
+    
     return rsp
     
 if __name__ == "__main__":

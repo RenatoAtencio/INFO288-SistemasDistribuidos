@@ -33,3 +33,9 @@ busqueda en db;success;2025-05-10 20:40:35.630636;2025-05-10 20:40:35.630636;800
 busqueda en db;success;2025-05-10 20:40:35.630636;2025-05-10 20:40:35.630636;8001;autoayuda;tipo_doc;;;35;20.57;autoayuda
 mandar_resultados_a_master;success;2025-05-10 20:40:35.627634;2025-05-10 20:40:35.631636;8001;autoayuda;tipo_doc;6;88;35;;
 disconect_from_master;success;2025-05-10 20:40:41.451535;2025-05-10 20:40:41.457944;8001;;;;;;;
+conection_to_master;success;2025-05-11 17:24:34.254068;2025-05-11 17:24:34.286722;8001;;;;;;;
+mandar_resultados_a_master;success;2025-05-11 17:26:26.570861;2025-05-11 17:26:26.591931;8001;busqueda test;titulo;0;56;23;;
+mandar_resultados_a_master;success;2025-05-11 17:27:30.500861;2025-05-11 17:27:30.501928;8001;trasnformaciones interestelasres del viento como enigma;titulo;0;56;32;;
+mandar_resultados_a_master;success;2025-05-11 17:28:29.558757;2025-05-11 17:28:29.560046;8001;blockchain entre cartas del legado cultural de nikola tesla;titulo;0;56;43;;
+mandar_resultados_a_master;success;2025-05-11 17:30:11.600955;2025-05-11 17:30:11.601906;8001;redescubre tu proposito;titulo;0;56;57;;
+disconect_from_master;success;2025-05-11 17:31:04.782101;2025-05-11 17:31:04.787098;8001;;;;;;;

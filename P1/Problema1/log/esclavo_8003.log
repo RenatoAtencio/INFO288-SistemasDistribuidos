@@ -60,3 +60,21 @@ busqueda en db;success;2025-05-10 20:40:36.057989;2025-05-10 20:40:36.057989;800
 busqueda en db;success;2025-05-10 20:40:36.057989;2025-05-10 20:40:36.057989;8003;fantasia;tipo_doc;;;35;12.87;fantasia
 mandar_resultados_a_master;success;2025-05-10 20:40:36.053471;2025-05-10 20:40:36.058989;8003;fantasia;tipo_doc;10;88;35;;
 disconect_from_master;success;2025-05-10 20:40:44.090461;2025-05-10 20:40:44.096724;8003;;;;;;;
+conection_to_master;success;2025-05-11 17:25:04.453437;2025-05-11 17:25:04.498326;8003;;;;;;;
+mandar_resultados_a_master;success;2025-05-11 17:26:27.372881;2025-05-11 17:26:27.393467;8003;busqueda test;titulo;0;56;23;;
+busqueda en db;success;2025-05-11 17:26:46.438660;2025-05-11 17:26:46.438660;8003;ciencia_ficcion;tipo_doc;;;23;23.265;ciencia_ficcion
+busqueda en db;success;2025-05-11 17:26:46.439668;2025-05-11 17:26:46.439668;8003;ciencia_ficcion;tipo_doc;;;23;23.76;ciencia_ficcion
+busqueda en db;success;2025-05-11 17:26:46.440670;2025-05-11 17:26:46.440670;8003;ciencia_ficcion;tipo_doc;;;23;22.275;ciencia_ficcion
+busqueda en db;success;2025-05-11 17:26:46.440670;2025-05-11 17:26:46.440670;8003;ciencia_ficcion;tipo_doc;;;23;21.285;ciencia_ficcion
+busqueda en db;success;2025-05-11 17:26:46.441671;2025-05-11 17:26:46.441671;8003;ciencia_ficcion;tipo_doc;;;23;19.8;ciencia_ficcion
+busqueda en db;success;2025-05-11 17:26:46.441671;2025-05-11 17:26:46.441671;8003;ciencia_ficcion;tipo_doc;;;23;19.305;ciencia_ficcion
+busqueda en db;success;2025-05-11 17:26:46.442673;2025-05-11 17:26:46.442673;8003;ciencia_ficcion;tipo_doc;;;23;20.79;ciencia_ficcion
+busqueda en db;success;2025-05-11 17:26:46.442673;2025-05-11 17:26:46.442673;8003;ciencia_ficcion;tipo_doc;;;23;22.77;ciencia_ficcion
+busqueda en db;success;2025-05-11 17:26:46.443671;2025-05-11 17:26:46.443671;8003;ciencia_ficcion;tipo_doc;;;23;20.295;ciencia_ficcion
+busqueda en db;success;2025-05-11 17:26:46.443671;2025-05-11 17:26:46.443671;8003;ciencia_ficcion;tipo_doc;;;23;18.81;ciencia_ficcion
+mandar_resultados_a_master;success;2025-05-11 17:26:46.438660;2025-05-11 17:26:46.444668;8003;ciencia_ficcion;tipo_doc;10;88;23;;
+mandar_resultados_a_master;success;2025-05-11 17:27:31.291750;2025-05-11 17:27:31.292747;8003;trasnformaciones interestelasres del viento como enigma;titulo;0;56;32;;
+busqueda en db;success;2025-05-11 17:28:30.395953;2025-05-11 17:28:30.395953;8003;blockchain entre cartas del legado cultural de nikola tesla;titulo;;;43;4.2;ciencia_ficcion
+mandar_resultados_a_master;success;2025-05-11 17:28:30.394955;2025-05-11 17:28:30.395953;8003;blockchain entre cartas del legado cultural de nikola tesla;titulo;1;88;43;;
+mandar_resultados_a_master;success;2025-05-11 17:30:12.443198;2025-05-11 17:30:12.443198;8003;redescubre tu proposito;titulo;0;56;57;;
+disconect_from_master;success;2025-05-11 17:31:05.364022;2025-05-11 17:31:05.369060;8003;;;;;;;

@@ -1,6 +1,6 @@
-import httpx
-import asyncio
 from dotenv import load_dotenv
+import asyncio
+import httpx
 import os
 
 load_dotenv(".env")
@@ -13,7 +13,9 @@ CLIENTHOSTENDPOINT = os.getenv("CLIENTHOSTENDPOINT")
 URL = f"{PROTOCOLO}://{HOST}:{HOSTPORT}/{CLIENTHOSTENDPOINT}"
 
 async def realizarBusqueda(edad: int, tipo_busqueda: int, busqueda: str):
-    
+    """
+        Realiza la llamada a el maestro para realizar la busqueda
+    """
     if tipo_busqueda == 1:
         t_bus = "titulo"
     elif tipo_busqueda == 2:
@@ -54,12 +56,12 @@ def mostrarInputBusqueda(opcion):
     if opcion == 1:
         busqueda = input("Ingrese su busqueda: ")
     elif opcion == 2:
-        print(opcion)
         print("Ingrese sus opciones de tipo de documento, separado por una ',' o '_' si es una palabra compuesta")
-        busqueda = input("> ")
+        busqueda = ''.join((input("> ")).split())
     else:
         print("Opcion fuera de rango")
         exit(-1)
+
     
     return busqueda
 
