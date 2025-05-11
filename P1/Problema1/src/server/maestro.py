@@ -1,15 +1,14 @@
 from fastapi import FastAPI, HTTPException, Query
-import os
-import uvicorn
-from dotenv import load_dotenv
-import httpx
-import asyncio
 from typing import List, Annotated
-
-app = FastAPI(title="Nodo Maestro")
-distribucion = []
+from dotenv import load_dotenv
+import uvicorn
+import asyncio
+import httpx
+import os
 
 load_dotenv(".env")
+app = FastAPI(title="Nodo Maestro")
+distribucion = []
 
 PROTOCOLO = os.getenv("PROTOCOLO")
 HOST = os.getenv("HOST") 
@@ -33,7 +32,7 @@ def read_root():
     """
     return {"ditribucion" : distribucion}
 
-async def realizarBusqueda(port: int, busqueda: str, tipo_busqueda: int, edad:int):
+async def realizarBusqueda(port: int, busqueda: str, tipo_busqueda: str, edad:int):
     """
         Realiza la llamada al esclavo
     """
@@ -56,7 +55,7 @@ async def realizarBusqueda(port: int, busqueda: str, tipo_busqueda: int, edad:in
 
 
 @app.get("/query")
-def busqueda(edad: int, tipo_busqueda: int, busqueda: str):
+def busqueda(edad: int, tipo_busqueda: str, busqueda: str):
     """
         Permite realizar las consultas a los esclavos
 
@@ -64,7 +63,7 @@ def busqueda(edad: int, tipo_busqueda: int, busqueda: str):
     """
 
     respuestas = []
-    if tipo_busqueda == 1: # Por titulo
+    if tipo_busqueda == "titulo": # Por titulo
         for nodo in distribucion:   # Broadcast
             print(f"Realizando busqueda en nodo: {nodo["puerto"]}")
             rsp = asyncio.run(realizarBusqueda(nodo["puerto"], busqueda, tipo_busqueda, edad))
@@ -74,7 +73,8 @@ def busqueda(edad: int, tipo_busqueda: int, busqueda: str):
                 "respuesta" : rsp # Tiene la database, y la lista de resultados-value
             })
         
-    elif tipo_busqueda == 2: # Por tipo de documento
+    elif tipo_busqueda == "tipo_doc": # Por tipo de documento
+
         arr_busqueda_por_tipo_doc = busqueda.split(',')
         for nodo in distribucion:
             for database in nodo["databases"]:
@@ -129,12 +129,15 @@ def ingresoEsclavo(puerto: int, databases: Annotated[List[str] | None, Query()])
 
 
 @app.delete("/exit")
-def salidaEsclavo(puerto: int):
+def salidaEsclavo(puerto: int, conected: bool):
     """
         Permite la salida de un esclavo de la distribucion 
 
         Necesita el puerto del esclavo (mismo puerto con el cual se conecto a la distribucion)
     """
+    if not conected:
+        return{"respuesta": "No conectado anteriormente"}
+    
     for nodo in distribucion:
         if nodo["puerto"] == puerto:
             distribucion.remove(nodo)
@@ -143,8 +146,6 @@ def salidaEsclavo(puerto: int):
     return{"respuesta": "desconexion exitosa"}
 
 if __name__ == "__main__":
-
-    
     puerto = int(os.getenv("HOSTPORT"))
     url = os.getenv("URL")
 

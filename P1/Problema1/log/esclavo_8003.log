@@ -1,0 +1,62 @@
+operacion;estado;t_ini;t_fin;puerto_maquina;busqueda;tipo_busqueda;cant_resultados;tamano_respuesta_bytes;edad;ranking;database
+conection_to_master;success;2025-05-10 20:37:15.472028;2025-05-10 20:37:15.507914;8003;;;;;;;
+mandar_resultados_a_master;success;2025-05-10 20:37:31.273807;2025-05-10 20:37:31.307687;8003;busqueda test;titulo;0;56;32;;
+busqueda en db;success;2025-05-10 20:37:44.539797;2025-05-10 20:37:44.539797;8003;fantasia;tipo_doc;;;43;16.803;fantasia
+busqueda en db;success;2025-05-10 20:37:44.541367;2025-05-10 20:37:44.541436;8003;fantasia;tipo_doc;;;43;16.088;fantasia
+busqueda en db;success;2025-05-10 20:37:44.546104;2025-05-10 20:37:44.546104;8003;fantasia;tipo_doc;;;43;15.015;fantasia
+busqueda en db;success;2025-05-10 20:37:44.547106;2025-05-10 20:37:44.547106;8003;fantasia;tipo_doc;;;43;13.943;fantasia
+busqueda en db;success;2025-05-10 20:37:44.547106;2025-05-10 20:37:44.547106;8003;fantasia;tipo_doc;;;43;15.73;fantasia
+busqueda en db;success;2025-05-10 20:37:44.548108;2025-05-10 20:37:44.548108;8003;fantasia;tipo_doc;;;43;17.16;fantasia
+busqueda en db;success;2025-05-10 20:37:44.548108;2025-05-10 20:37:44.548108;8003;fantasia;tipo_doc;;;43;14.657;fantasia
+busqueda en db;success;2025-05-10 20:37:44.549114;2025-05-10 20:37:44.549114;8003;fantasia;tipo_doc;;;43;13.585;fantasia
+busqueda en db;success;2025-05-10 20:37:44.549114;2025-05-10 20:37:44.549114;8003;fantasia;tipo_doc;;;43;15.373;fantasia
+busqueda en db;success;2025-05-10 20:37:44.549114;2025-05-10 20:37:44.550106;8003;fantasia;tipo_doc;;;43;12.87;fantasia
+mandar_resultados_a_master;success;2025-05-10 20:37:44.539797;2025-05-10 20:37:44.550106;8003;fantasia;tipo_doc;10;88;43;;
+busqueda en db;success;2025-05-10 20:38:06.624906;2025-05-10 20:38:06.624906;8003;blockchain del amor test;titulo;;;21;5.3;misterio
+busqueda en db;success;2025-05-10 20:38:06.624906;2025-05-10 20:38:06.624906;8003;blockchain del amor test;titulo;;;21;5.315;misterio
+busqueda en db;success;2025-05-10 20:38:06.625914;2025-05-10 20:38:06.625914;8003;blockchain del amor test;titulo;;;21;5.338;misterio
+busqueda en db;success;2025-05-10 20:38:06.625914;2025-05-10 20:38:06.625914;8003;blockchain del amor test;titulo;;;21;5.315;misterio
+busqueda en db;success;2025-05-10 20:38:06.626918;2025-05-10 20:38:06.626918;8003;blockchain del amor test;titulo;;;21;5.3;misterio
+busqueda en db;success;2025-05-10 20:38:06.627917;2025-05-10 20:38:06.627917;8003;blockchain del amor test;titulo;;;21;5.465;fantasia
+busqueda en db;success;2025-05-10 20:38:06.627917;2025-05-10 20:38:06.627917;8003;blockchain del amor test;titulo;;;21;5.465;fantasia
+busqueda en db;success;2025-05-10 20:38:06.628915;2025-05-10 20:38:06.628915;8003;blockchain del amor test;titulo;;;21;5.465;fantasia
+busqueda en db;success;2025-05-10 20:38:06.628915;2025-05-10 20:38:06.628915;8003;blockchain del amor test;titulo;;;21;5.465;fantasia
+busqueda en db;success;2025-05-10 20:38:06.628915;2025-05-10 20:38:06.628915;8003;blockchain del amor test;titulo;;;21;5.48;fantasia
+mandar_resultados_a_master;success;2025-05-10 20:38:06.624574;2025-05-10 20:38:06.629915;8003;blockchain del amor test;titulo;10;88;21;;
+busqueda en db;success;2025-05-10 20:38:52.503785;2025-05-10 20:38:52.503785;8003;cronicas de sombras y runas del mar;titulo;;;23;5.3;misterio
+busqueda en db;success;2025-05-10 20:38:52.505074;2025-05-10 20:38:52.505074;8003;cronicas de sombras y runas del mar;titulo;;;23;5.315;misterio
+busqueda en db;success;2025-05-10 20:38:52.505074;2025-05-10 20:38:52.505074;8003;cronicas de sombras y runas del mar;titulo;;;23;5.338;misterio
+busqueda en db;success;2025-05-10 20:38:52.505806;2025-05-10 20:38:52.505806;8003;cronicas de sombras y runas del mar;titulo;;;23;5.315;misterio
+busqueda en db;success;2025-05-10 20:38:52.505806;2025-05-10 20:38:52.506794;8003;cronicas de sombras y runas del mar;titulo;;;23;5.375;misterio
+busqueda en db;success;2025-05-10 20:38:52.506794;2025-05-10 20:38:52.507815;8003;cronicas de sombras y runas del mar;titulo;;;23;5.465;fantasia
+busqueda en db;success;2025-05-10 20:38:52.507815;2025-05-10 20:38:52.507815;8003;cronicas de sombras y runas del mar;titulo;;;23;5.465;fantasia
+busqueda en db;success;2025-05-10 20:38:52.507815;2025-05-10 20:38:52.508794;8003;cronicas de sombras y runas del mar;titulo;;;23;5.465;fantasia
+busqueda en db;success;2025-05-10 20:38:52.508794;2025-05-10 20:38:52.508794;8003;cronicas de sombras y runas del mar;titulo;;;23;5.54;fantasia
+busqueda en db;success;2025-05-10 20:38:52.508794;2025-05-10 20:38:52.508794;8003;cronicas de sombras y runas del mar;titulo;;;23;5.465;fantasia
+busqueda en db;success;2025-05-10 20:38:52.508794;2025-05-10 20:38:52.508794;8003;cronicas de sombras y runas del mar;titulo;;;23;5.57;fantasia
+busqueda en db;success;2025-05-10 20:38:52.510308;2025-05-10 20:38:52.510308;8003;cronicas de sombras y runas del mar;titulo;;;23;5.48;fantasia
+mandar_resultados_a_master;success;2025-05-10 20:38:52.503785;2025-05-10 20:38:52.511319;8003;cronicas de sombras y runas del mar;titulo;12;88;23;;
+mandar_resultados_a_master;success;2025-05-10 20:39:15.379216;2025-05-10 20:39:15.381158;8003;arqueologia muestras estelares ;titulo;0;56;32;;
+busqueda en db;success;2025-05-10 20:40:09.258574;2025-05-10 20:40:09.258574;8003;misterio;tipo_doc;;;32;20.24;misterio
+busqueda en db;success;2025-05-10 20:40:09.258574;2025-05-10 20:40:09.259532;8003;misterio;tipo_doc;;;32;21.12;misterio
+busqueda en db;success;2025-05-10 20:40:09.259532;2025-05-10 20:40:09.259532;8003;misterio;tipo_doc;;;32;20.68;misterio
+busqueda en db;success;2025-05-10 20:40:09.259532;2025-05-10 20:40:09.260533;8003;misterio;tipo_doc;;;32;19.8;misterio
+busqueda en db;success;2025-05-10 20:40:09.260533;2025-05-10 20:40:09.260533;8003;misterio;tipo_doc;;;32;18.92;misterio
+busqueda en db;success;2025-05-10 20:40:09.260533;2025-05-10 20:40:09.260533;8003;misterio;tipo_doc;;;32;19.36;misterio
+busqueda en db;success;2025-05-10 20:40:09.261532;2025-05-10 20:40:09.261532;8003;misterio;tipo_doc;;;32;18.48;misterio
+busqueda en db;success;2025-05-10 20:40:09.261532;2025-05-10 20:40:09.261532;8003;misterio;tipo_doc;;;32;18.04;misterio
+busqueda en db;success;2025-05-10 20:40:09.261532;2025-05-10 20:40:09.261532;8003;misterio;tipo_doc;;;32;20.68;misterio
+busqueda en db;success;2025-05-10 20:40:09.263039;2025-05-10 20:40:09.263039;8003;misterio;tipo_doc;;;32;19.8;misterio
+mandar_resultados_a_master;success;2025-05-10 20:40:09.258574;2025-05-10 20:40:09.263561;8003;misterio;tipo_doc;10;88;32;;
+busqueda en db;success;2025-05-10 20:40:36.053977;2025-05-10 20:40:36.053977;8003;fantasia;tipo_doc;;;35;16.803;fantasia
+busqueda en db;success;2025-05-10 20:40:36.053977;2025-05-10 20:40:36.053977;8003;fantasia;tipo_doc;;;35;16.088;fantasia
+busqueda en db;success;2025-05-10 20:40:36.054987;2025-05-10 20:40:36.054987;8003;fantasia;tipo_doc;;;35;15.015;fantasia
+busqueda en db;success;2025-05-10 20:40:36.054987;2025-05-10 20:40:36.054987;8003;fantasia;tipo_doc;;;35;13.943;fantasia
+busqueda en db;success;2025-05-10 20:40:36.054987;2025-05-10 20:40:36.054987;8003;fantasia;tipo_doc;;;35;15.73;fantasia
+busqueda en db;success;2025-05-10 20:40:36.055985;2025-05-10 20:40:36.055985;8003;fantasia;tipo_doc;;;35;17.16;fantasia
+busqueda en db;success;2025-05-10 20:40:36.056992;2025-05-10 20:40:36.056992;8003;fantasia;tipo_doc;;;35;14.657;fantasia
+busqueda en db;success;2025-05-10 20:40:36.056992;2025-05-10 20:40:36.056992;8003;fantasia;tipo_doc;;;35;13.585;fantasia
+busqueda en db;success;2025-05-10 20:40:36.057989;2025-05-10 20:40:36.057989;8003;fantasia;tipo_doc;;;35;15.373;fantasia
+busqueda en db;success;2025-05-10 20:40:36.057989;2025-05-10 20:40:36.057989;8003;fantasia;tipo_doc;;;35;12.87;fantasia
+mandar_resultados_a_master;success;2025-05-10 20:40:36.053471;2025-05-10 20:40:36.058989;8003;fantasia;tipo_doc;10;88;35;;
+disconect_from_master;success;2025-05-10 20:40:44.090461;2025-05-10 20:40:44.096724;8003;;;;;;;

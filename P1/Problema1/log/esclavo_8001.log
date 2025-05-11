@@ -1,0 +1,35 @@
+operacion;estado;t_ini;t_fin;puerto_maquina;busqueda;tipo_busqueda;cant_resultados;tamano_respuesta_bytes;edad;ranking;database
+conection_to_master;success;2025-05-10 20:35:59.083098;2025-05-10 20:35:59.123605;8001;;;;;;;
+mandar_resultados_a_master;success;2025-05-10 20:37:30.339954;2025-05-10 20:37:30.372956;8001;busqueda test;titulo;0;56;32;;
+busqueda en db;success;2025-05-10 20:38:05.787720;2025-05-10 20:38:05.787720;8001;blockchain del amor test;titulo;;;21;4.739;aventura
+busqueda en db;success;2025-05-10 20:38:05.788737;2025-05-10 20:38:05.788737;8001;blockchain del amor test;titulo;;;21;4.739;aventura
+busqueda en db;success;2025-05-10 20:38:05.793747;2025-05-10 20:38:05.793747;8001;blockchain del amor test;titulo;;;21;4.739;aventura
+busqueda en db;success;2025-05-10 20:38:05.794755;2025-05-10 20:38:05.794755;8001;blockchain del amor test;titulo;;;21;4.739;aventura
+busqueda en db;success;2025-05-10 20:38:05.794755;2025-05-10 20:38:05.794755;8001;blockchain del amor test;titulo;;;21;4.765;aventura
+mandar_resultados_a_master;success;2025-05-10 20:38:05.787720;2025-05-10 20:38:05.796773;8001;blockchain del amor test;titulo;5;88;21;;
+busqueda en db;success;2025-05-10 20:38:51.656338;2025-05-10 20:38:51.656338;8001;cronicas de sombras y runas del mar;titulo;;;23;4.739;aventura
+busqueda en db;success;2025-05-10 20:38:51.656338;2025-05-10 20:38:51.656338;8001;cronicas de sombras y runas del mar;titulo;;;23;4.739;aventura
+busqueda en db;success;2025-05-10 20:38:51.657336;2025-05-10 20:38:51.657336;8001;cronicas de sombras y runas del mar;titulo;;;23;4.739;aventura
+busqueda en db;success;2025-05-10 20:38:51.657336;2025-05-10 20:38:51.658334;8001;cronicas de sombras y runas del mar;titulo;;;23;4.739;aventura
+busqueda en db;success;2025-05-10 20:38:51.658334;2025-05-10 20:38:51.658334;8001;cronicas de sombras y runas del mar;titulo;;;23;4.765;aventura
+mandar_resultados_a_master;success;2025-05-10 20:38:51.655325;2025-05-10 20:38:51.659960;8001;cronicas de sombras y runas del mar;titulo;5;88;23;;
+mandar_resultados_a_master;success;2025-05-10 20:39:14.553644;2025-05-10 20:39:14.554652;8001;arqueologia muestras estelares ;titulo;0;56;32;;
+busqueda en db;success;2025-05-10 20:40:35.223697;2025-05-10 20:40:35.223697;8001;aventura;tipo_doc;;;35;16.951;aventura
+busqueda en db;success;2025-05-10 20:40:35.225119;2025-05-10 20:40:35.225119;8001;aventura;tipo_doc;;;35;15.477;aventura
+busqueda en db;success;2025-05-10 20:40:35.225119;2025-05-10 20:40:35.225119;8001;aventura;tipo_doc;;;35;15.846;aventura
+busqueda en db;success;2025-05-10 20:40:35.225704;2025-05-10 20:40:35.225704;8001;aventura;tipo_doc;;;35;16.583;aventura
+busqueda en db;success;2025-05-10 20:40:35.225704;2025-05-10 20:40:35.225704;8001;aventura;tipo_doc;;;35;16.278;aventura
+busqueda en db;success;2025-05-10 20:40:35.226704;2025-05-10 20:40:35.226704;8001;aventura;tipo_doc;;;35;17.688;aventura
+busqueda en db;success;2025-05-10 20:40:35.226704;2025-05-10 20:40:35.226704;8001;aventura;tipo_doc;;;35;15.109;aventura
+busqueda en db;success;2025-05-10 20:40:35.227705;2025-05-10 20:40:35.227705;8001;aventura;tipo_doc;;;35;14.74;aventura
+busqueda en db;success;2025-05-10 20:40:35.228721;2025-05-10 20:40:35.228721;8001;aventura;tipo_doc;;;35;15.846;aventura
+busqueda en db;success;2025-05-10 20:40:35.228721;2025-05-10 20:40:35.228721;8001;aventura;tipo_doc;;;35;17.32;aventura
+mandar_resultados_a_master;success;2025-05-10 20:40:35.223697;2025-05-10 20:40:35.229704;8001;aventura;tipo_doc;10;88;35;;
+busqueda en db;success;2025-05-10 20:40:35.627634;2025-05-10 20:40:35.628637;8001;autoayuda;tipo_doc;;;35;21.038;autoayuda
+busqueda en db;success;2025-05-10 20:40:35.628637;2025-05-10 20:40:35.628637;8001;autoayuda;tipo_doc;;;35;20.103;autoayuda
+busqueda en db;success;2025-05-10 20:40:35.629638;2025-05-10 20:40:35.629638;8001;autoayuda;tipo_doc;;;35;21.505;autoayuda
+busqueda en db;success;2025-05-10 20:40:35.629638;2025-05-10 20:40:35.629638;8001;autoayuda;tipo_doc;;;35;19.635;autoayuda
+busqueda en db;success;2025-05-10 20:40:35.630636;2025-05-10 20:40:35.630636;8001;autoayuda;tipo_doc;;;35;18.7;autoayuda
+busqueda en db;success;2025-05-10 20:40:35.630636;2025-05-10 20:40:35.630636;8001;autoayuda;tipo_doc;;;35;20.57;autoayuda
+mandar_resultados_a_master;success;2025-05-10 20:40:35.627634;2025-05-10 20:40:35.631636;8001;autoayuda;tipo_doc;6;88;35;;
+disconect_from_master;success;2025-05-10 20:40:41.451535;2025-05-10 20:40:41.457944;8001;;;;;;;

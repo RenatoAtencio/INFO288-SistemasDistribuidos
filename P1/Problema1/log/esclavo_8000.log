@@ -1,0 +1,21 @@
+operacion;estado;t_ini;t_fin;puerto_maquina;busqueda;tipo_busqueda;cant_resultados;tamano_respuesta_bytes;edad;ranking;database
+conection_to_master;success;2025-05-10 20:35:36.450585;2025-05-10 20:35:36.508614;8000;;;;;;;
+mandar_resultados_a_master;success;2025-05-10 20:37:29.928581;2025-05-10 20:37:29.928581;8000;busqueda test;titulo;0;56;32;;
+busqueda en db;success;2025-05-10 20:38:05.391307;2025-05-10 20:38:05.391307;8000;blockchain del amor test;titulo;;;21;5.3;tecnologia
+busqueda en db;success;2025-05-10 20:38:05.391307;2025-05-10 20:38:05.391307;8000;blockchain del amor test;titulo;;;21;5.289;tecnologia
+mandar_resultados_a_master;success;2025-05-10 20:38:05.390307;2025-05-10 20:38:05.393821;8000;blockchain del amor test;titulo;2;88;21;;
+busqueda en db;success;2025-05-10 20:38:51.254017;2025-05-10 20:38:51.254017;8000;cronicas de sombras y runas del mar;titulo;;;23;5.289;tecnologia
+mandar_resultados_a_master;success;2025-05-10 20:38:51.252898;2025-05-10 20:38:51.255214;8000;cronicas de sombras y runas del mar;titulo;1;88;23;;
+mandar_resultados_a_master;success;2025-05-10 20:39:14.115426;2025-05-10 20:39:14.116427;8000;arqueologia muestras estelares ;titulo;0;56;32;;
+busqueda en db;success;2025-05-10 20:40:34.817473;2025-05-10 20:40:34.817473;8000;tecnologia;tipo_doc;;;35;19.8;tecnologia
+busqueda en db;success;2025-05-10 20:40:34.818475;2025-05-10 20:40:34.818475;8000;tecnologia;tipo_doc;;;35;18.48;tecnologia
+busqueda en db;success;2025-05-10 20:40:34.819468;2025-05-10 20:40:34.819468;8000;tecnologia;tipo_doc;;;35;21.12;tecnologia
+busqueda en db;success;2025-05-10 20:40:34.819468;2025-05-10 20:40:34.819468;8000;tecnologia;tipo_doc;;;35;20.24;tecnologia
+busqueda en db;success;2025-05-10 20:40:34.820476;2025-05-10 20:40:34.820476;8000;tecnologia;tipo_doc;;;35;19.36;tecnologia
+busqueda en db;success;2025-05-10 20:40:34.820476;2025-05-10 20:40:34.820476;8000;tecnologia;tipo_doc;;;35;18.04;tecnologia
+busqueda en db;success;2025-05-10 20:40:34.821467;2025-05-10 20:40:34.821467;8000;tecnologia;tipo_doc;;;35;18.92;tecnologia
+busqueda en db;success;2025-05-10 20:40:34.821467;2025-05-10 20:40:34.821467;8000;tecnologia;tipo_doc;;;35;17.16;tecnologia
+busqueda en db;success;2025-05-10 20:40:34.821467;2025-05-10 20:40:34.822974;8000;tecnologia;tipo_doc;;;35;17.6;tecnologia
+busqueda en db;success;2025-05-10 20:40:34.822974;2025-05-10 20:40:34.822974;8000;tecnologia;tipo_doc;;;35;16.28;tecnologia
+mandar_resultados_a_master;success;2025-05-10 20:40:34.817473;2025-05-10 20:40:34.823984;8000;tecnologia;tipo_doc;10;88;35;;
+disconect_from_master;success;2025-05-10 20:40:48.251375;2025-05-10 20:40:48.257722;8000;;;;;;;

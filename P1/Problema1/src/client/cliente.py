@@ -13,6 +13,15 @@ CLIENTHOSTENDPOINT = os.getenv("CLIENTHOSTENDPOINT")
 URL = f"{PROTOCOLO}://{HOST}:{HOSTPORT}/{CLIENTHOSTENDPOINT}"
 
 async def realizarBusqueda(edad: int, tipo_busqueda: int, busqueda: str):
+    
+    if tipo_busqueda == 1:
+        t_bus = "titulo"
+    elif tipo_busqueda == 2:
+        t_bus = "tipo_doc"
+    else:
+        print("error en tipo de busqueda")
+        exit(-1)
+
     async with httpx.AsyncClient() as client:
         try:
             response = await client.get(
@@ -20,7 +29,7 @@ async def realizarBusqueda(edad: int, tipo_busqueda: int, busqueda: str):
                 params={
                     "edad": edad,
                     "busqueda": busqueda, 
-                    "tipo_busqueda": tipo_busqueda
+                    "tipo_busqueda": t_bus
                 }
             )
             return imprimirResultados(response.json())
@@ -37,6 +46,7 @@ def mostrarOpciones(opciones):
     print("Ingrese su tipo de busqueda")
     for i in range(0, len(opciones)):
         print(f"{i+1}) Por {opciones[i]}")
+
 
 def mostrarInputBusqueda(opcion):
     busqueda = ""
@@ -57,10 +67,9 @@ def mostrarInputBusqueda(opcion):
 if __name__ == "__main__":
     seguir = True 
     opciones = ["Titulo", "Tipo de documento"]
-    edad = -1
     
     while seguir:
-
+        edad = -1
         while True:
             try:
                 while (0 > edad):

@@ -1,0 +1,9 @@
+operacion;estado;t_ini;t_fin;puerto_maquina;busqueda;tipo_busqueda;cant_resultados;tamano_respuesta_bytes;edad;ranking;database
+conection_to_master;success;2025-05-10 20:36:37.983779;2025-05-10 20:36:38.018696;8002;;;;;;;
+mandar_resultados_a_master;success;2025-05-10 20:37:30.810908;2025-05-10 20:37:30.841041;8002;busqueda test;titulo;0;56;32;;
+busqueda en db;success;2025-05-10 20:38:06.205043;2025-05-10 20:38:06.205043;8002;blockchain del amor test;titulo;;;21;5.025;ciencia_ficcion
+mandar_resultados_a_master;success;2025-05-10 20:38:06.205043;2025-05-10 20:38:06.206052;8002;blockchain del amor test;titulo;1;88;21;;
+busqueda en db;success;2025-05-10 20:38:52.071982;2025-05-10 20:38:52.071982;8002;cronicas de sombras y runas del mar;titulo;;;23;5.025;ciencia_ficcion
+mandar_resultados_a_master;success;2025-05-10 20:38:52.069982;2025-05-10 20:38:52.073488;8002;cronicas de sombras y runas del mar;titulo;1;88;23;;
+mandar_resultados_a_master;success;2025-05-10 20:39:14.966688;2025-05-10 20:39:14.968693;8002;arqueologia muestras estelares ;titulo;0;56;32;;
+disconect_from_master;success;2025-05-10 20:40:46.390792;2025-05-10 20:40:46.395815;8002;;;;;;;
