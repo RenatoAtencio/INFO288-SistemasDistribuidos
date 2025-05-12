@@ -29,7 +29,9 @@ PATH_LOG=f"../../{LOG_DIRECTORY}/esclavo_{SLAVEPORT}.log"
 COLUMNAS_LOG = (os.getenv("LOGCOLUMNS")).split(",")
 
 peso_titulo = float(os.getenv("PESOTITULO"))  
-peso_preferencias = float(os.getenv("PESOPREFERENCIAS"))  
+peso_preferencias = float(os.getenv("PESOPREFERENCIAS")) 
+
+PREFERENCIAS = os.getenv("PREFERENCIASDB")
 
 def verificar_log(path_log, columnas):
     """
@@ -183,7 +185,6 @@ def recuperarDatabase(nombre_db):
     f.close()
     return contenido
 
-
 def quitar_tildes(texto: str) -> str:
     return ''.join(
         c for c in unicodedata.normalize('NFD', texto)
@@ -212,19 +213,9 @@ def compararABusqueda(busqueda, titulo):
 
 @app.get("/query")
 def busqueda(busqueda: str, tipo_busqueda: str, edad: int):
-    preferencias = {
-        # col =            0-14, 15-29, 30-54, >55
-        "ciencia_ficcion":  [8.5, 9.0, 7.5, 3.0],
-        "aventura":         [9.0, 8.5, 6.7, 5.0],
-        "romance":          [6.0, 8.5, 7.5, 5.5],
-        "historia":         [3.0, 4.5, 6.7, 9.0],
-        "biografia":        [2.0, 3.3, 6.5, 9.5],
-        "misterio":         [6.5, 9.5, 8.0, 6.0],
-        "fantasia":         [9.5, 9.8, 6.5, 4.0],
-        "autoayuda":        [1.4, 6.9, 8.5, 5.3],
-        "poesia":           [3.5, 5.0, 6.0, 7.5],
-        "tecnologia":       [6.3, 9.5, 8.0, 5.0],
-    }   
+    with open(PREFERENCIAS + ".json", "r", encoding="utf-8") as f:
+        preferencias = json.load(f)
+
     rsp = []
 
     if 0 <= edad <= 14:
